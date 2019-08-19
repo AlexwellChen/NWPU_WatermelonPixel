@@ -78,5 +78,3 @@ Updated on Aug.14/2019
 
 ![](images/screenshot/screenshot_1.png)
 
----
-`NPUPhoto/README.md`"# NWPU_WatermelonPixel" 
