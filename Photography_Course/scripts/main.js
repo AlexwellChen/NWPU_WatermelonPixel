@@ -1,5 +1,6 @@
 var activeFilter = 'all';
 
+//标签（已删除）
 $('.pp-filter-button').on('click', function(e) {
   // remove btn-primary from all buttons first
   $('.pp-filter-button').removeClass('btn-primary');
@@ -19,6 +20,7 @@ function filterItems(filter) {
   }
 
   activeFilter = filter;
+//	.pp-gallery .card第二图层以及图片部分
   $('.pp-gallery .card').each(function () {
     var card = $(this);
     var groups = card.data("groups");
