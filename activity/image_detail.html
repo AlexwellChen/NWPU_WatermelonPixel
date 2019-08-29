@@ -68,7 +68,8 @@
 								var name = document.getElementById('name').value;
 								var number = document.getElementById('number').value;
 								var department = document.getElementById('department').value;
-								if (number.length != 10) {
+								var email = document.getElementById('email').value;
+								if (number.length != 10 || name == null || number == null || department == null) {
 									alert('格式不正确');
 									return;
 								}
