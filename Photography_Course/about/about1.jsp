@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -16,15 +18,15 @@
       <header>
         <div class="pp-header">
           <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container"><a href="../index.html"><img src="../images/favicon.png"></a><a class="navbar-brand" href="index.html">西瓜摄影前期教程</a>
+            <div class="container"><a href="../index.jsp"><img src="../images/favicon.png"></a><a class="navbar-brand" href="index.jsp">西瓜摄影前期教程</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a class="nav-link" href="../index.html">主页</a>
+                  <li class="nav-item"><a class="nav-link" href="../index.jsp">主页</a>
                   </li>
-                  <li class="nav-item active"><a class="nav-link" href="../about.html">前期教程</a>
+                  <li class="nav-item active"><a class="nav-link" href="../about.jsp">前期教程</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="../blog.html">后期教程</a>
+                  <li class="nav-item"><a class="nav-link" href="../blog.jsp">后期教程</a>
                   </li>
                 </ul>
               </div>
@@ -49,7 +51,7 @@
 	<br>
 	<br>
 	<br>
-	<p align="right"><a href="about2.html" style="font-size: 30px"><strong><em>go to Part2</em></strong></a></p>
+	<p align="right"><a href="about2.jsp" style="font-size: 30px"><strong><em>go to Part2</em></strong></a></p>
   <div class="row py-5">
     <div class="col-md-9 col-sm-12">
       

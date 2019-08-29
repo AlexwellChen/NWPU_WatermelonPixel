@@ -56,7 +56,6 @@ html {
 }
 
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
-/*此元素将显示为块级元素，此元素前后会带有换行符。	*/
   display: block;
 }
 
@@ -9129,13 +9128,10 @@ body {
 }
 
 .pp-gallery .card figure figcaption {
-/*	内边距*/
   padding: 2em;
   color: #fff;
-/*	控制文本大小写：（uppercase）定义仅有大写字母。*/
   text-transform: uppercase;
   font-size: 1.25em;
-/*	定义当元素不面向屏幕时是否可见：（hidden）背面是不可见的。*/
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -9148,13 +9144,10 @@ body {
   width: 100%;
   height: 100%;
 }
-/*选择父元素为 <div> 元素的所有 <p> 元素*/
+
 .pp-gallery .card figure figcaption > a {
   z-index: 1000;
-/*	规定文本块中首行文本的缩进：（%）基于父元素宽度的百分比的缩进*/
   text-indent: 200%;
-/*	设置如何处理元素内的空白
-	nowrap:文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。*/
   white-space: nowrap;
   font-size: 0;
   opacity: 0;
@@ -9185,7 +9178,7 @@ body {
   content: '';
   opacity: 0;
 }
-/*向每个图片之中添加两个横向边框*/
+
 .pp-gallery figure.pp-effect figcaption::before {
   top: 50px;
   right: 30px;
@@ -9193,11 +9186,8 @@ body {
   left: 30px;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-/*	允许我们对元素进行旋转、缩放、移动或倾斜。
-	scale(x,y)：定义 2D 缩放转换*/
   -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
-/*	元素的位置（x,y,z（0））*/
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
 }
@@ -9242,7 +9232,6 @@ body {
 .pp-gallery figure.pp-effect figcaption::before,
 .pp-gallery figure.pp-effect figcaption::after,
 .pp-gallery figure.pp-effect p {
-/*	transition动画 opacity：透明度,transform:*/
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
