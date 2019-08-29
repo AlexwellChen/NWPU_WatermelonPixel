@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 
@@ -12,30 +14,27 @@
 	</head>
 
 	<body>
-		<div class="page-content-wrap clearfix">
-				<form class="layui-form">
+		<div class="wrap-container clearfix">
+				<form class="layui-form column-content-detail">
 					<div class="layui-tab">
 						<ul class="layui-tab-title">
-						  <li><a href="danye-list.html">图片列表</a></li>
 						  <li class="layui-this">图片管理</li>
-						</ul>
+					  </ul>
 						<div class="layui-tab-content">
-						  <div class="layui-tab-item"></div>
 							<div class="layui-tab-item layui-show">
 								<div class="layui-form-item">
-								  <label class="layui-form-label">图片名称：</label>
-								  <div class="layui-input-block">
-										<inp图片ut type="text" name="name" required lay-verify="required" placeholder="请输入文章名称" autocomplete="off" class="layui-input">
+									<label class="layui-form-label">标题：</label>
+									<div class="layui-input-block">
+										<input type="text" name="name" required lay-verify="required" placeholder="请输入图片名称" autocomplete="off" class="layui-input">
 									</div>
 								</div>
 								<div class="layui-form-item">
-									<label class="layui-form-label">选择模板：</label>
+									<label class="layui-form-label">模版：</label>
 									<div class="layui-input-block">
 										<select name="category" lay-verify="required">
-											<option value="">请选择模板</option>
-											<option value="1">article.html</option>
-											<option value="2">list.html</option>
-											<option value="2">page.html</option>
+											<option value="">请选择模版</option>
+												<option value="1">about.jsp</option>
+												<option value="2">list.jsp</option>
 										</select>
 									</div>
 								</div>
@@ -45,13 +44,14 @@
 										<input type="file" name="file（可随便定义）" class="layui-upload-file">
 									</div>
 								</div>
-								
 								<div class="layui-form-item layui-form-text">
-								  <label class="layui-form-label">图片内容：</label>
-								  <div class="layui-input-block">
+									<label class="layui-form-label">图片内容：</label>
+									<div class="layui-input-block">
 										<textarea class="layui-textarea layui-hide" name="content" lay-verify="content" id="LAY_demo_editor"></textarea>
 									</div>
 								</div>
+							</div>
+							<div class="layui-tab-item">
 								<div class="layui-form-item">
 									<label class="layui-form-label">关键字：</label>
 									<div class="layui-input-block">
@@ -64,9 +64,6 @@
 										<textarea placeholder="请输入内容" class="layui-textarea"></textarea>
 									</div>
 								</div>
-							</div>
-							<div class="layui-tab-item">
-								
 							</div>
 						</div>
 					</div>
@@ -81,28 +78,30 @@
 		<script type="text/javascript">
 			var SCOPE = {
 				static: '/static',
-				index: '/admin/category/index.html',
-				add: 'add.html',
-				save: '/admin/category/save.html',
-				edit: 'add.html',
-				updateEdit: '/admin/category/updateedit.html',
-				status: '/admin/category/updatestatus.html',
-				del: '/admin/category/del.html',
-				delAll: '/admin/category/deleteall.html',
-				listOrderAll: '/admin/category/listorderall.html'
+				index: '/admin/category/index.jsp',
+				add: 'add.jsp',
+				save: '/admin/category/save.jsp',
+				edit: 'add.jsp',
+				updateEdit: '/admin/category/updateedit.jsp',
+				status: '/admin/category/updatestatus.jsp',
+				del: '/admin/category/del.jsp',
+				delAll: '/admin/category/deleteall.jsp',
+				listOrderAll: '/admin/category/listorderall.jsp'
 			}
 		</script>
 		<script src="../../static/admin/layui/layui.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../../static/admin/js/common.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 			
-			layui.use(['form', 'jquery', 'laydate', 'layer', 'laypage', 'dialog', 'element', 'upload', 'layedit'], function() {
+			layui.use(['form', 'jquery', 'laydate', 'layer', 'laypage', 'dialog', 'common', 'tool', 'element', 'upload', 'layedit'], function() {
 				var form = layui.form(),
 					layer = layui.layer,
 					$ = layui.jquery,
 					laypage = layui.laypage,
 					laydate = layui.laydate,
 					layedit = layui.layedit,
+					common = layui.common,
+					tool = layui.tool,
 					element = layui.element(),
 					dialog = layui.dialog;
 

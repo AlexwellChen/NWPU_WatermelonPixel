@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 
@@ -63,7 +65,7 @@
 							<td>
 								<div class="layui-inline">
 									
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.jsp"><i class="layui-icon">&#xe640;</i></button>
 								</div>
 							</td>
 						</tr>
@@ -78,7 +80,7 @@
 							<td>
 								<div class="layui-inline">
 									
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.jsp"><i class="layui-icon">&#xe640;</i></button>
 								</div>
 							</td>
 						</tr>
@@ -93,7 +95,7 @@
 							<td>
 								<div class="layui-inline">
 									
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.jsp"><i class="layui-icon">&#xe640;</i></button>
 								</div>
 							</td>
 						</tr>
@@ -108,7 +110,7 @@
 							<td>
 								<div class="layui-inline">
 									
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.jsp"><i class="layui-icon">&#xe640;</i></button>
 								</div>
 							</td>
 						</tr>						
@@ -140,9 +142,9 @@
 					var status = That.attr('data-status');
 					var id = That.parent().attr('data-id');
 					if(status == 1) {
-						That.removeClass('layui-btn-normal').addClass('layui-btn-warm').html('隐藏').attr('data-status', 2);
+						That.removeClass('layui-btn-normal').addClass('layui-btn-warm').jsp('隐藏').attr('data-status', 2);
 					} else if(status == 2) {
-						That.removeClass('layui-btn-warm').addClass('layui-btn-normal').html('显示').attr('data-status', 1);
+						That.removeClass('layui-btn-warm').addClass('layui-btn-normal').jsp('显示').attr('data-status', 1);
 
 					}
 				})

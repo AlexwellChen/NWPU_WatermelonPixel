@@ -1,35 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="renderer" content="webkit">
-  		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>网站后台管理模版</title>
-		<link rel="stylesheet" type="text/css" href="../../static/admin/layui/css/layui.css"/>
-		<link rel="stylesheet" type="text/css" href="../../static/admin/css/admin.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/admin/layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/admin/css/admin.css" />
 	</head>
+
 	<body>
-	<form class="layui-form column-content-detail">
+		<div class="page-content-wrap clearfix">
+				<form class="layui-form">
 					<div class="layui-tab">
 						<ul class="layui-tab-title">
-							<li class="layui-this">活动内容</li>
+						  <li><a href="danye-list.jsp">图片列表</a></li>
+						  <li class="layui-this">图片管理</li>
 						</ul>
 						<div class="layui-tab-content">
+						  <div class="layui-tab-item"></div>
 							<div class="layui-tab-item layui-show">
 								<div class="layui-form-item">
-									<label class="layui-form-label">活动标题：</label>
-									<div class="layui-input-block">
-										<input type="text" name="name" required lay-verify="required" placeholder="请输入活动标题" autocomplete="off" class="layui-input">
+								  <label class="layui-form-label">图片名称：</label>
+								  <div class="layui-input-block">
+										<inp图片ut type="text" name="name" required lay-verify="required" placeholder="请输入文章名称" autocomplete="off" class="layui-input">
 									</div>
 								</div>
 								<div class="layui-form-item">
-									<label class="layui-form-label">分类栏目：</label>
+									<label class="layui-form-label">选择模板：</label>
 									<div class="layui-input-block">
 										<select name="category" lay-verify="required">
-											<option value="">请选择分类栏目</option>
-												<option value="1">公司新闻</option>
-												<option value="2">行业新闻</option>
+											<option value="">请选择模板</option>
+											<option value="1">article.jsp</option>
+											<option value="2">list.jsp</option>
+											<option value="2">page.jsp</option>
 										</select>
 									</div>
 								</div>
@@ -39,35 +47,13 @@
 										<input type="file" name="file（可随便定义）" class="layui-upload-file">
 									</div>
 								</div>
-								<div class="layui-form-item">
-									<label class="layui-form-label">标签：</label>
-									<div class="layui-input-block">
-										<input type="checkbox" name="label[tj]" title="推荐" checked>
-										<input type="checkbox" name="label[zd]" title="置顶">
-										<input type="checkbox" name="label[hot]" title="热门">
-									</div>
-								</div>
-<div class="layui-form-item layui-form-text">
-  <label class="layui-form-label">活动内容：</label>
-  <div class="layui-input-block">
+								
+								<div class="layui-form-item layui-form-text">
+								  <label class="layui-form-label">图片内容：</label>
+								  <div class="layui-input-block">
 										<textarea class="layui-textarea layui-hide" name="content" lay-verify="content" id="LAY_demo_editor"></textarea>
 									</div>
 								</div>
-
-								<div class="layui-form-item">
-								  <label class="layui-form-label">创建人：</label>
-								  <div class="layui-input-block">
-										<input type="text" name="laiyuan" required lay-verify="required" placeholder="请输入文章来源" autocomplete="off" class="layui-input">
-									</div>
-								</div>
-<div class="layui-form-item">
-		  <label class="layui-form-label">点击数：</label>
-									<div class="layui-input-block">
-										<input type="text" name="count" required lay-verify="required" placeholder="请输入文章点击数" autocomplete="off" class="layui-input" value="100">
-									</div>
-								</div>
-							</div>
-							<div class="layui-tab-item">
 								<div class="layui-form-item">
 									<label class="layui-form-label">关键字：</label>
 									<div class="layui-input-block">
@@ -81,6 +67,9 @@
 									</div>
 								</div>
 							</div>
+							<div class="layui-tab-item">
+								
+							</div>
 						</div>
 					</div>
 					<div class="layui-form-item" style="padding-left: 10px;">
@@ -90,18 +79,32 @@
 						</div>
 					</div>
 				</form>
-	<script src="../../static/admin/layui/layui.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../static/admin/js/common.js" type="text/javascript" charset="utf-8"></script>
-	<script>
-		layui.use(['form', 'jquery', 'laydate', 'layer', 'laypage', 'dialog', 'common', 'tool', 'element', 'upload', 'layedit'], function() {
+		</div>
+		<script type="text/javascript">
+			var SCOPE = {
+				static: '/static',
+				index: '/admin/category/index.jsp',
+				add: 'add.jsp',
+				save: '/admin/category/save.jsp',
+				edit: 'add.jsp',
+				updateEdit: '/admin/category/updateedit.jsp',
+				status: '/admin/category/updatestatus.jsp',
+				del: '/admin/category/del.jsp',
+				delAll: '/admin/category/deleteall.jsp',
+				listOrderAll: '/admin/category/listorderall.jsp'
+			}
+		</script>
+		<script src="../../static/admin/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../static/admin/js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			
+			layui.use(['form', 'jquery', 'laydate', 'layer', 'laypage', 'dialog', 'element', 'upload', 'layedit'], function() {
 				var form = layui.form(),
 					layer = layui.layer,
 					$ = layui.jquery,
 					laypage = layui.laypage,
 					laydate = layui.laydate,
 					layedit = layui.layedit,
-					common = layui.common,
-					tool = layui.tool,
 					element = layui.element(),
 					dialog = layui.dialog;
 
@@ -140,6 +143,7 @@
 					}
 				});
 			});
-	</script>
+		</script>
 	</body>
+
 </html>

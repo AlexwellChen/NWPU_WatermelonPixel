@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 
@@ -16,7 +18,7 @@
 				<form class="layui-form">
 					<div class="layui-tab" style="margin: 0;">
 						<ul class="layui-tab-title">
-						  <li><a href="activity-list.html">活动列表</a></li>
+						  <li><a href="activity-list.jsp">活动列表</a></li>
 						  <li class="layui-this">活动详情</li>
 						</ul>
 						<div class="layui-tab-content">
@@ -98,15 +100,15 @@
 		<script type="text/javascript">
 			var SCOPE = {
 				static: '/static',
-				index: '/admin/category/index.html',
-				add: 'add.html',
-				save: '/admin/category/save.html',
-				edit: 'add.html',
-				updateEdit: '/admin/category/updateedit.html',
-				status: '/admin/category/updatestatus.html',
-				del: '/admin/category/del.html',
-				delAll: '/admin/category/deleteall.html',
-				listOrderAll: '/admin/category/listorderall.html'
+				index: '/admin/category/index.jsp',
+				add: 'add.jsp',
+				save: '/admin/category/save.jsp',
+				edit: 'add.jsp',
+				updateEdit: '/admin/category/updateedit.jsp',
+				status: '/admin/category/updatestatus.jsp',
+				del: '/admin/category/del.jsp',
+				delAll: '/admin/category/deleteall.jsp',
+				listOrderAll: '/admin/category/listorderall.jsp'
 			}
 		</script>
 		<script src="../../static/admin/layui/layui.js" type="text/javascript" charset="utf-8"></script>

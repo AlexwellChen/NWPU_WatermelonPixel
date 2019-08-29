@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 
@@ -16,8 +18,8 @@
 			<form class="layui-form" action="">
 				<div class="layui-form-item">
 					<div class="layui-inline tool-btn">
-						<button class="layui-btn layui-btn-small layui-btn-normal go-btn hidden-xs" data-url="danye-detail.html"><i class="layui-icon">&#xe654;</i></button>
-						<button class="layui-btn layui-btn-small layui-btn-warm listOrderBtn hidden-xs" data-url="/admin/category/listorderall.html"><i class="iconfont">&#xe656;</i></button>
+						<button class="layui-btn layui-btn-small layui-btn-normal go-btn hidden-xs" data-url="danye-detail.jsp"><i class="layui-icon">&#xe654;</i></button>
+						<button class="layui-btn layui-btn-small layui-btn-warm listOrderBtn hidden-xs" data-url="/admin/category/listorderall.jsp"><i class="iconfont">&#xe656;</i></button>
 					</div>
 					<div class="layui-inline">
 						<input type="text" name="title" placeholder="请输入标题" autocomplete="off" class="layui-input">
@@ -57,8 +59,8 @@
 							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
 							<td>
 								<div class="layui-inline">
-									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.jsp"><i class="layui-icon">&#xe642;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.jsp"><i class="layui-icon">&#xe640;</i></button>
 								</div>
 							</td>
 						</tr>
@@ -71,8 +73,8 @@
 							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
 							<td>
 								<div class="layui-inline">
-									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.jsp"><i class="layui-icon">&#xe642;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.jsp"><i class="layui-icon">&#xe640;</i></button>
 								</div>
 							</td>
 						</tr>
@@ -85,8 +87,8 @@
 							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
 							<td>
 								<div class="layui-inline">
-									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.jsp"><i class="layui-icon">&#xe642;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.jsp"><i class="layui-icon">&#xe640;</i></button>
 								</div>
 							</td>
 						</tr>
@@ -99,8 +101,8 @@
 							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
 							<td>
 								<div class="layui-inline">
-									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.jsp"><i class="layui-icon">&#xe642;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.jsp"><i class="layui-icon">&#xe640;</i></button>
 								</div>
 							</td>
 						</tr>
@@ -113,8 +115,8 @@
 							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
 							<td>
 								<div class="layui-inline">
-									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.jsp"><i class="layui-icon">&#xe642;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.jsp"><i class="layui-icon">&#xe640;</i></button>
 								</div>
 							</td>
 						</tr>
@@ -127,8 +129,8 @@
 							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
 							<td>
 								<div class="layui-inline">
-									<button class="layui-btn layui-btn-mini layui-btn-normal go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-normal go-btn" data-id="1" data-url="danye-detail.jsp"><i class="layui-icon">&#xe642;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.jsp"><i class="layui-icon">&#xe640;</i></button>
 								</div>
 							</td>
 						</tr>
@@ -160,9 +162,9 @@
 					var status = That.attr('data-status');
 					var id = That.parent().attr('data-id');
 					if(status == 1) {
-						That.removeClass('layui-btn-normal').addClass('layui-btn-warm').html('隐藏').attr('data-status', 2);
+						That.removeClass('layui-btn-normal').addClass('layui-btn-warm').jsp('隐藏').attr('data-status', 2);
 					} else if(status == 2) {
-						That.removeClass('layui-btn-warm').addClass('layui-btn-normal').html('显示').attr('data-status', 1);
+						That.removeClass('layui-btn-warm').addClass('layui-btn-normal').jsp('显示').attr('data-status', 1);
 
 					}
 				})
