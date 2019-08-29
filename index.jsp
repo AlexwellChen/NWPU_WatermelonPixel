@@ -107,8 +107,14 @@
         <div class="media">
           <div class="media-left"> <a href="#"> </a></div>
           <div class="media-body">
-            <h2 class="media-heading">如何加入我们</h2>
-            填写报名表并提交，等待面试通知就可以啦
+            <h2 class="media-heading">加入我们</h2><br>
+            	<form action="getRegister" method="get" class = "form-horizontal" onsubmit="return check()" name="zhaoxin">
+						姓名：<input id="name" type="text" name="name"/><br><br>
+						学号：<input id="number" type="text" name="number" /><br><br>
+						学院：<input id="department" type="text" name="department"><br><br>
+						邮箱：<input id="email" type="email" name="email"><br><br>
+						<input type="submit" value="提交" style="margin-left:100px"/>
+				</form>
 			</div>
 			
         </div>
@@ -116,11 +122,6 @@
     </div>
   </div>
 </section>
-<center>
-	<a href="activity/image_detail.jsp">
-	<button type="button" class="btn btn-primary">报名入口</button>
-	</a>
-</center>
 <section>
 	<div class="container">
 		<div class="row">
@@ -214,6 +215,29 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="js/jquery-1.11.3.min.js"></script> 
+<script type="text/javascript">
+	
+	function check(){
+		if($("#name").val() == ""){
+			alert('输入姓名');
+			return false;
+		}
+		if($("#number").val() == ""){
+			alert('输入学号');
+			return false;
+		}
+		if($("#department").val() == ""){
+			alert('输入学院');
+			return false;
+		}
+		if($("#email").val() == ""){
+			alert('输入邮箱');
+			return false;
+		}
+		alert('提交成功');
+		return true;
+	}
+</script>
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/bootstrap.js"></script>
 </body>

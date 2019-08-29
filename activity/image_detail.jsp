@@ -56,7 +56,7 @@
                         <p>here</p>
 						<br>
 						<br>
-						<form action="getRegister" method="post">
+						<form action="getRegister" method="get">
 							姓名：<input id="name" type="text" name="name"/><br><br>
 							学号：<input id="number" type="text" name="number" /><br><br>
 							学院：<input id="department" type="text" name="department"><br><br>
