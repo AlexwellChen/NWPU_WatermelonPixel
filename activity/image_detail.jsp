@@ -1,5 +1,5 @@
-<%@page pageEncoding="utf-8" contentType="text/html;charset=utf-8"%> html>
-<html lang="en-US">
+<%@page pageEncoding="utf-8" contentType="text/html;charset=utf-8"%>
+<html lang="zh">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,41 +56,14 @@
                         <p>here</p>
 						<br>
 						<br>
-						<form name="login_form" action="/server_url" method="post">
+						<form name="login_form" action="register" method="post">
 							姓名：<input id="name" type="text" name="name"/><br><br>
 							学号：<input id="number" type="text" name="number" /><br><br>
 							学院：<input id="department" type="text" name="department"><br><br>
 							邮箱：<input id="email" type="email" name="email"><br><br>
+							<input type="submit" value="提交" class="btn btn-primary"/>
 						</form>
-						<button id="btn-submit" onclick="beforeSubmit()" class="btn btn-primary" style="margin-left: 109px">提交</button>
-						<script type="text/javascript">
-							function beforeSubmit() {
-								var name = document.getElementById('name').value;
-								var number = document.getElementById('number').value;
-								var department = document.getElementById('department').value;
-								var email = document.getElementById('email').value;
-								if (number.length != 10 || name == null || number == null || department == null) {
-									alert('格式不正确');
-									return;
-								}
-
-								// 1.创建一个FormData对象，直接把我们的表单传进去  
-								var formData = new FormData(document.forms.namedItem("login_form"));
-
-								// 2.创建一个http请求对象
-								var xmlHttpRequest = new XMLHttpRequest();
-
-								xmlHttpRequest.open('post', '/server_url');
-								xmlHttpRequest.onload = function(resp) {
-									if (xmlHttpRequest.status == 200) {
-										alert('提交成功！');
-									} else {
-										alert('Error:' + xmlHttpRequest.status);
-									}
-								};
-								xmlHttpRequest.send(formData);
-							}
-						</script>
+						
 						
                     </div>
                 </div>

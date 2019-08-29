@@ -12,13 +12,6 @@
 <style type="text/css">
 @import url("css/index.css");
 </style>
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <nav class="navbar navbar-default" role="navigation" style="font-size:18px">
     <div class="container-fluid"> 
@@ -35,18 +28,18 @@
     <div class="collapse navbar-collapse" id="example-navbar-collapse">
         <ul class="nav navbar-nav">
 			
-            <li ><a href="picture/picture.html"> 图库 </a>
+            <li ><a href="picture/picture.jsp"> 图库 </a>
             </li>
 			
-            <li class="dropdown"><a href="Photography_Course/index.html" class="dropdown-toggle" data-toggle="dropdown"> 教程 <strong class="caret"></strong> </a>
+            <li class="dropdown"><a href="Photography_Course/index.jsp" class="dropdown-toggle" data-toggle="dropdown"> 教程 <strong class="caret"></strong> </a>
               <ul class="dropdown-menu">
-                    <li><a href="Photography_Course/about.html">前期拍摄教程</a></li>
+                    <li><a href="Photography_Course/about.jsp">前期拍摄教程</a></li>
 					<li class="divider"></li>
-                    <li><a href="Photography_Course/blog.html">后期图像处理教程</a></li>
+                    <li><a href="Photography_Course/blog.jsp">后期图像处理教程</a></li>
                 </ul>
             </li>
 			
-            <li ><a href="activity/picture.html"> 活动 </a>
+            <li ><a href="activity/picture.jsp"> 活动 </a>
         </ul>
     </div>
     </div>
@@ -76,7 +69,7 @@
     </div>
     <!-- 轮播（Carousel）导航 -->
     <a class="carousel-control left" href="#myCarousel" 
-       data-slide="prev"> <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
+       data-slide="prev"> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
     <a class="carousel-control right" href="#myCarousel" 
        data-slide="next">&rsaquo;</a>
 </div>
@@ -124,9 +117,9 @@
   </div>
 </section>
 <center>
-<a href="activity/image_detail.html">
-<button type="button" class="btn btn-primary">报名入口</button>
-</a>
+	<a href="activity/image_detail.jsp">
+	<button type="button" class="btn btn-primary">报名入口</button>
+	</a>
 </center>
 <section>
 	<div class="container">
