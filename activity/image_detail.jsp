@@ -56,15 +56,13 @@
                         <p>here</p>
 						<br>
 						<br>
-						<form name="login_form" action="register" method="post">
+						<form action="getRegister" method="post">
 							姓名：<input id="name" type="text" name="name"/><br><br>
 							学号：<input id="number" type="text" name="number" /><br><br>
 							学院：<input id="department" type="text" name="department"><br><br>
 							邮箱：<input id="email" type="email" name="email"><br><br>
-							<input type="submit" value="提交" class="btn btn-primary"/>
+							<input type="submit" value="提交"/>
 						</form>
-						
-						
                     </div>
                 </div>
             </div>
