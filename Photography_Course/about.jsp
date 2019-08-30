@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<%@page pageEncoding="utf-8" contentType="text/html;charset=utf-8"%>
+<html lang="zh">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,15 +17,15 @@
       <header>
         <div class="pp-header">
           <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container"><a href="index.html"><img src="../images/logo/PA@small.png" class="navbar-brand"></a><a class="navbar-brand" href="index.html">西瓜像素</a>
+            <div class="container"><a href="index.jsp"><img src="../images/logo/PA@small.png" class="navbar-brand"></a><a class="navbar-brand" href="index.jsp">西瓜像素</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a class="nav-link" href="index.html">主页</a> 
+                  <li class="nav-item"><a class="nav-link" href="index.jsp">主页</a> 
 				  </li>
-                  <li class="nav-item active"><a class="nav-link" href="about.html">前期教程</a>
+                  <li class="nav-item active"><a class="nav-link" href="about.jsp">前期教程</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="blog.html">后期制作</a>
+                  <li class="nav-item"><a class="nav-link" href="blog.jsp">后期制作</a>
                   </li>
                 </ul>
               </div>
@@ -45,7 +45,7 @@
     <div class="card-columns">
 		
 	  <!--第一份教程-->
-      <div class="card new_card" data-groups="[&quot;nature&quot;]"><a href="about/about1.html">
+      <div class="card new_card" data-groups="[&quot;nature&quot;]"><a href="about/about.jsp">
           <figure class="pp-effect"><img class="img-fluid" src="images/1-nature.jpg" alt="Nature"/>
             <figcaption >
               <div >这是标题</div>
@@ -56,7 +56,7 @@
 	 
 	
       <!--第二份教程-->
-	  <div class="card new_card" data-groups="[&quot;nature&quot;]"><a href="about/about2.html">
+	  <div class="card new_card" data-groups="[&quot;nature&quot;]"><a href="#">
           <figure class="pp-effect"><img class="img-fluid" src="images/4-nature.jpg" alt="Nature"/>
             <figcaption >
               <div >这是标题</div>
@@ -65,7 +65,7 @@
           </figure></a></div>
 
       <!--第三份教程-->
-	  <div class="card new_card" data-groups="[&quot;food&quot;]"><a href="about/about3.html">
+	  <div class="card new_card" data-groups="[&quot;food&quot;]"><a href="#">
           <figure class="pp-effect"><img class="img-fluid" src="images/27-food.jpg" alt="Food"/>
             <figcaption >
               <div >这是标题</div>

@@ -25,7 +25,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <ul class="navbar-nav ml-auto">                        
-                            <li class="nav-item"><a class="nav-link" href="../index.html">官网首页</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.jsp">官网首页</a></li>
                         </ul>
                     </div>
                 </div>

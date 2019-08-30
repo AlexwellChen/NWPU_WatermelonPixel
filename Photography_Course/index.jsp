@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<%@page pageEncoding="utf-8" contentType="text/html;charset=utf-8"%>>
+<html lang="zh">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,17 +16,17 @@
       <header>
         <div class="pp-header">
           <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container"><a href="index.html"><img src="../images/logo/PA@small.png" class="navbar-brand"></a><a class="navbar-brand" href="index.html">西瓜像素</a>
+            <div class="container"><a href="index.jsp"><img src="../images/logo/PA@small.png" class="navbar-brand"></a><a class="navbar-brand" href="index.jsp">西瓜像素</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active"><a class="nav-link" href="index.html">主页</a>
+                  <li class="nav-item active"><a class="nav-link" href="index.jsp">主页</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="about.html">前期教程</a>
+                  <li class="nav-item"><a class="nav-link" href="about.jsp">前期教程</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="blog.html">后期制作</a>
+                  <li class="nav-item"><a class="nav-link" href="blog.jsp">后期制作</a>
                   </li>
-				  <li class="nav-item"><a class="nav-link" href="../index.html">返回</a>
+				  <li class="nav-item"><a class="nav-link" href="../index.jsp">返回</a>
                   </li>
                 </ul>
               </div>
@@ -77,7 +77,7 @@
               <p style="width: 90%;padding-left: 20%;padding-top:5%">你熟悉一般的摄像器材吗?你会用普通的摄像机摄像吗?你想不想把人生旅程中的美好时刻永恒的保存下来呢?你想成为一名专业的摄像师吗?</p>
             </figcaption>
           </figure></div>
-      <div class="card" data-groups="[&quot;computer&quot;]"><a href="about.html">
+      <div class="card" data-groups="[&quot;computer&quot;]"><a href="about.jsp">
           <figure class="pp-effect"><img class="img-fluid" src="images/18-computer.jpg" alt="Computer"/>
             <figcaption>
 				<div>点我！点我！点我！</div>
