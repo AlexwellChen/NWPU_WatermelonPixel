@@ -1,7 +1,12 @@
+<<<<<<< HEAD:Photography_Course/index.jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en-US">
+=======
+<%@page pageEncoding="utf-8" contentType="text/html;charset=utf-8"%>>
+<html lang="zh">
+>>>>>>> 969242220efe95943cfacbd722c87c379a900b31:Photography_Course/index.html
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,7 +84,11 @@
               <p style="width: 90%;padding-left: 20%;padding-top:5%">你熟悉一般的摄像器材吗?你会用普通的摄像机摄像吗?你想不想把人生旅程中的美好时刻永恒的保存下来呢?你想成为一名专业的摄像师吗?</p>
             </figcaption>
           </figure></div>
+<<<<<<< HEAD:Photography_Course/index.jsp
       <div class="card"><a href="about.jsp">
+=======
+      <div class="card" data-groups="[&quot;computer&quot;]"><a href="about.jsp">
+>>>>>>> 969242220efe95943cfacbd722c87c379a900b31:Photography_Course/index.html
           <figure class="pp-effect"><img class="img-fluid" src="images/18-computer.jpg" alt="Computer"/>
             <figcaption>
 				<div>点我！点我！点我！</div>

@@ -1,7 +1,12 @@
+<<<<<<< HEAD:Photography_Course/blog.jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en-US">
+=======
+<%@page pageEncoding="utf-8" contentType="text/html;charset=utf-8"%>
+<html lang="zh">
+>>>>>>> 969242220efe95943cfacbd722c87c379a900b31:Photography_Course/blog.html
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,7 +52,11 @@
     <div class="card-columns">
 <!--	必须多余五份，否则会出现问题-->
 	  <!--第一份教程-->
+<<<<<<< HEAD:Photography_Course/blog.jsp
       <div class="card new_card" ><a href="about/about1.jsp">
+=======
+      <div class="card new_card" data-groups="[&quot;nature&quot;]"><a href="blog/blog1.jsp">
+>>>>>>> 969242220efe95943cfacbd722c87c379a900b31:Photography_Course/blog.html
           <figure class="pp-effect"><img class="img-fluid" src="images/1-nature.jpg" alt="Nature"/>
             <figcaption >
               <div >这是标题</div>
@@ -58,7 +67,11 @@
 	 
 	
       <!--第二份教程-->
+<<<<<<< HEAD:Photography_Course/blog.jsp
 	  <div class="card new_card" ><a href="about/about2.jsp">
+=======
+	  <div class="card new_card" data-groups="[&quot;nature&quot;]"><a href="blog/blog2.jsp">
+>>>>>>> 969242220efe95943cfacbd722c87c379a900b31:Photography_Course/blog.html
           <figure class="pp-effect"><img class="img-fluid" src="images/4-nature.jpg" alt="Nature"/>
             <figcaption >
               <div >这是标题</div>
@@ -67,6 +80,7 @@
           </figure></a></div>
 
       <!--第三份教程-->
+<<<<<<< HEAD:Photography_Course/blog.jsp
 	  <div class="card new_card" ><a href="about/about3.jsp">
           <figure class="pp-effect"><img class="img-fluid" src="images/27-food.jpg" alt="Food"/>
             <figcaption >
@@ -84,6 +98,9 @@
           </figure></a></div>
 		      <!--第三份教程-->
 	  <div class="card new_card" ><a href="about/about3.jsp">
+=======
+	  <div class="card new_card" data-groups="[&quot;food&quot;]"><a href="blog/blog3.jsp">
+>>>>>>> 969242220efe95943cfacbd722c87c379a900b31:Photography_Course/blog.html
           <figure class="pp-effect"><img class="img-fluid" src="images/27-food.jpg" alt="Food"/>
             <figcaption >
               <div >这是标题</div>

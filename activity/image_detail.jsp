@@ -22,7 +22,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="picture.html">活动首页</a></li>
+                            <li class="nav-item"><a class="nav-link" href="picture.jsp">活动首页</a></li>
                             <!--
                   <li class="nav-item"><a class="nav-link" href="about.html">About</a>
                   </li>
@@ -56,12 +56,12 @@
                         <p>here</p>
 						<br>
 						<br>
-						<form action="getRegister" method="post">
+						<form action="../getRegister" method="post" onsubmit="return check()">
 							姓名：<input id="name" type="text" name="name"/><br><br>
 							学号：<input id="number" type="text" name="number" /><br><br>
 							学院：<input id="department" type="text" name="department"><br><br>
 							邮箱：<input id="email" type="email" name="email"><br><br>
-							<input type="submit" value="提交"/>
+							<input type="submit" value="提交" class="btn btn-primary" style="margin-left: 111px"/>
 						</form>
                     </div>
                 </div>
@@ -84,5 +84,28 @@
 <script src="js/popper.min.js"></script> 
 <script src="js/bootstrap.js"></script> 
 <script src="scripts/main.js"></script>
+<script type="text/javascript">
+	
+	function check(){
+		if($("#name").val() == ""){
+			alert('输入姓名');
+			return false;
+		}
+		if($("#number").val() == ""){
+			alert('输入学号');
+			return false;
+		}
+		if($("#department").val() == ""){
+			alert('输入学院');
+			return false;
+		}
+		if($("#email").val() == ""){
+			alert('输入邮箱');
+			return false;
+		}
+		alert('提交成功');
+		return true;
+	}
+</script>
 </body>
 </html>

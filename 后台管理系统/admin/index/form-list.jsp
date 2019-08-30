@@ -53,8 +53,8 @@
 							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
 							<td class="hidden-xs">1</td>
 							<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
-							<td>关于我们</td>
-							<td>2016-09-06 20:46:16</td>
+							<td>迎新报名</td>
+							<td>2019-08-30</td>
 							<td>
 							  <div class="layui-inline">
 								<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="form-detail.jsp"><i class="layui-icon">&#xe642;</i></button>

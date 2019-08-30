@@ -22,9 +22,15 @@
 				  <li class="layui-nav-item">
 				    <a href="javascript:;"><i class="iconfont">&#xe608;</i>内容管理</a>
 				    <dl class="layui-nav-child">
+<<<<<<< HEAD:后台管理系统/admin/index/index.jsp
 				      <dd><a href="javascript:;" data-url="activity-list.jsp" data-id="3" data-text="活动管理"><span class="l-line"></span>活动管理</a></dd>
 				      <dd><a href="javascript:;" data-url="danye-list.jsp" data-id="9" data-text="图片管理"><span class="l-line"></span>图片管理</a></dd>
 					  <dd><a href="javascript:;" data-url="form-list.jsp" data-id="9" data-text="表单管理"><span class="l-line"></span>表单管理</a></dd>
+=======
+				      <dd><a href="javascript:;" data-url="activity-list.html" data-id="3" data-text="活动管理"><span class="l-line"></span>活动管理</a></dd>
+				      <dd><a href="javascript:;" data-url="danye-list.html" data-id="6" data-text="图片管理"><span class="l-line"></span>图片管理</a></dd>
+					  <dd><a href="javascript:;" data-url="form-list.html" data-id="9" data-text="表单管理"><span class="l-line"></span>表单管理</a></dd>
+>>>>>>> 969242220efe95943cfacbd722c87c379a900b31:后台管理系统/admin/index/index.html
 				    </dl>
 				  </li>
 				  
