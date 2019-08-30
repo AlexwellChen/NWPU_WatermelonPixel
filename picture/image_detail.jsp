@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<%@page pageEncoding="utf-8" contentType="text/html;charset=utf-8"%>
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
@@ -18,19 +18,19 @@
         </div>
         <div class="pp-header">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container"><a href="index.html"><img src="../images/logo/PA@small.png" class="navbar-brand"></a><a class="navbar-brand" href="index.html">西瓜像素</a>
+                <div class="container"><a href="index.jsp"><img src="../images/logo/PA@small.png" class="navbar-brand"></a><a class="navbar-brand" href="index.jsp">西瓜像素</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="picture.html">图库首页</a> </li>
+                            <li class="nav-item"><a class="nav-link" href="picture.jsp">图库首页</a> </li>
                             <!--
-                  <li class="nav-item"><a class="nav-link" href="about.html">About</a>
+                  <li class="nav-item"><a class="nav-link" href="about.jsp">About</a>
                   </li>
 --> 
-                            <!--<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a>
+                            <!--<li class="nav-item"><a class="nav-link" href="blog.jsp">Blog</a>
                   </li>--> 
                             <!--
-                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a>
+                  <li class="nav-item"><a class="nav-link" href="contact.jsp">Contact</a>
                   </li>
 -->
                         </ul>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -20,9 +20,9 @@
 				  <li class="layui-nav-item">
 				    <a href="javascript:;"><i class="iconfont">&#xe608;</i>内容管理</a>
 				    <dl class="layui-nav-child">
-				      <dd><a href="javascript:;" data-url="activity-list.html" data-id="3" data-text="活动管理"><span class="l-line"></span>活动管理</a></dd>
-				      <dd><a href="javascript:;" data-url="danye-list.html" data-id="9" data-text="图片管理"><span class="l-line"></span>图片管理</a></dd>
-					  <dd><a href="javascript:;" data-url="form-list.html" data-id="9" data-text="表单管理"><span class="l-line"></span>表单管理</a></dd>
+				      <dd><a href="javascript:;" data-url="activity-list.jsp" data-id="3" data-text="活动管理"><span class="l-line"></span>活动管理</a></dd>
+				      <dd><a href="javascript:;" data-url="danye-list.jsp" data-id="6" data-text="图片管理"><span class="l-line"></span>图片管理</a></dd>
+					  <dd><a href="javascript:;" data-url="form-list.jsp" data-id="9" data-text="表单管理"><span class="l-line"></span>表单管理</a></dd>
 				    </dl>
 				  </li>
 				  
@@ -56,7 +56,7 @@
 					  <div class="layui-tab-content">
 					    <div class="layui-tab-item layui-show" style="background: #f5f5f5;">
 					    	<!--1-->
-					    	<iframe src="welcome.html" width="100%" height="100%" name="iframe" scrolling="auto" class="iframe" framborder="0"></iframe>
+					    	<iframe src="welcome.jsp" width="100%" height="100%" name="iframe" scrolling="auto" class="iframe" framborder="0"></iframe>
 					    	<!--1end-->
 					    </div>
 					  </div>
@@ -70,7 +70,7 @@
 		</div>
 		<script type="text/javascript">
 			var scope={
-				link:'./welcome.html'
+				link:'./welcome.jsp'
 			}
 		</script>
 		<script src="../../static/admin/layui/layui.js" type="text/javascript" charset="utf-8"></script>

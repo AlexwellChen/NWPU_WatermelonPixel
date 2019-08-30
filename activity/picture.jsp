@@ -25,7 +25,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <ul class="navbar-nav ml-auto">                        
-                            <li class="nav-item"><a class="nav-link" href="../index.html">官网首页</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.jsp">官网首页</a></li>
                         </ul>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
             <div class="container px-0">
                 <div class="pp-gallery">
                     <div class="card-columns">
-                        <div class="card" data-groups="[&quot;nature&quot;]"><a href="image_detail.html">
+                        <div class="card" data-groups="[&quot;nature&quot;]"><a href="image_detail.jsp">
                             <figure class="pp-effect"><img class="img-fluid" src="images/contents/display/1-nature.jpg" alt="Nature"/>
                                 <figcaption>
                                     <div class="h4">Forest</div>
@@ -52,7 +52,7 @@
                                 </figcaption>
                             </figure>
                             </a></div>
-                        <div class="card" data-groups="[&quot;nature&quot;]"><a href="image_detail.html">
+                        <div class="card" data-groups="[&quot;nature&quot;]"><a href="image_detail.jsp">
                             <figure class="pp-effect"><img class="img-fluid" src="images/contents/display/2-nature.jpg" alt="Nature"/>
                                 <figcaption>
                                     <div class="h4">Bird</div>
@@ -60,7 +60,7 @@
                                 </figcaption>
                             </figure>
                             </a></div>
-                        <div class="card" data-groups="[&quot;nature&quot;]"><a href="image_detail.html">
+                        <div class="card" data-groups="[&quot;nature&quot;]"><a href="image_detail.jsp">
                             <figure class="pp-effect"><img class="img-fluid" src="images/contents/display/4-nature.jpg" alt="Nature"/>
                                 <figcaption>
                                     <div class="h4">Sunrise</div>
@@ -68,7 +68,7 @@
                                 </figcaption>
                             </figure>
                             </a></div>
-                        <div class="card" data-groups="[&quot;nature&quot;]"><a href="image_detail.html">
+                        <div class="card" data-groups="[&quot;nature&quot;]"><a href="image_detail.jsp">
                             <figure class="pp-effect"><img class="img-fluid" src="images/contents/display/5-nature.jpg" alt="Nature"/>
                                 <figcaption>
                                     <div class="h4">Greenery</div>
@@ -76,7 +76,7 @@
                                 </figcaption>
                             </figure>
                             </a></div>
-                        <div class="card" data-groups="[&quot;nature&quot;]"><a href="image_detail.html">
+                        <div class="card" data-groups="[&quot;nature&quot;]"><a href="image_detail.jsp">
                             <figure class="pp-effect"><img class="img-fluid" src="images/contents/display/8-nature.jpg" alt="Nature"/>
                                 <figcaption>
                                     <div class="h4">Bird</div>
@@ -84,7 +84,7 @@
                                 </figcaption>
                             </figure>
                             </a></div>
-                        <div class="card" data-groups="[&quot;nature&quot;]"><a href="image_detail.html">
+                        <div class="card" data-groups="[&quot;nature&quot;]"><a href="image_detail.jsp">
                             <figure class="pp-effect"><img class="img-fluid" src="images/contents/display/9-nature.jpg" alt="Nature"/>
                                 <figcaption>
                                     <div class="h4">Flower</div>
@@ -92,7 +92,7 @@
                                 </figcaption>
                             </figure>
                             </a></div>
-                        <div class="card" data-groups="[&quot;people&quot; , &quot;nature&quot;]"><a href="image_detail.html">
+                        <div class="card" data-groups="[&quot;people&quot; , &quot;nature&quot;]"><a href="image_detail.jsp">
                             <figure class="pp-effect"><img class="img-fluid" src="images/contents/display/10-people.jpg" alt="People"/>
                                 <figcaption>
                                     <div class="h4">Model</div>
@@ -100,7 +100,7 @@
                                 </figcaption>
                             </figure>
                             </a></div>
-                        <div class="card" data-groups="[&quot;people&quot;]"><a href="image_detail.html">
+                        <div class="card" data-groups="[&quot;people&quot;]"><a href="image_detail.jsp">
                             <figure class="pp-effect"><img class="img-fluid" src="images/contents/display/11-people.jpg" alt="People"/>
                                 <figcaption>
                                     <div class="h4">Cute</div>
@@ -108,7 +108,7 @@
                                 </figcaption>
                             </figure>
                             </a></div>
-                        <div class="card" data-groups="[&quot;people&quot;]"><a href="image_detail.html">
+                        <div class="card" data-groups="[&quot;people&quot;]"><a href="image_detail.jsp">
                             <figure class="pp-effect"><img class="img-fluid" src="images/contents/display/13-people.jpg" alt="People"/>
                                 <figcaption>
                                     <div class="h4">Model</div>
@@ -116,7 +116,7 @@
                                 </figcaption>
                             </figure>
                             </a></div>
-                        <div class="card" data-groups="[&quot;people&quot;]"><a href="image_detail.html">
+                        <div class="card" data-groups="[&quot;people&quot;]"><a href="image_detail.jsp">
                             <figure class="pp-effect"><img class="img-fluid" src="images/contents/display/14-people.jpg" alt="People"/>
                                 <figcaption>
                                     <div class="h4">Model</div>
