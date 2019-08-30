@@ -1,5 +1,7 @@
-<%@page pageEncoding="utf-8" contentType="text/html;charset=utf-8"%>
-<html lang="zh">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en-US">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +12,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <link href="styles/main.css" rel="stylesheet">
-	<link href="styles/about_blog.css" rel="stylesheet">
+
   </head>
   <body id="top">
     <div class="page">
@@ -43,32 +45,45 @@
 <div class="container px-0">
   <div class="pp-gallery">
     <div class="card-columns">
+<!--	必须多余五份，否则会出现问题-->
 	  <!--第一份教程-->
-      <div class="card new_card" data-groups="[&quot;nature&quot;]"><a href="blog/blog1.jsp">
+      <div class="card new_card" ><a href="about/about1.jsp">
           <figure class="pp-effect"><img class="img-fluid" src="images/1-nature.jpg" alt="Nature"/>
             <figcaption >
               <div >这是标题</div>
               <p style="width: 90%;padding-left: 20%; padding-top: 5%;">在这里添加简介....</p>
-            </figcaption> 
+            </figcaption>
           </figure></a>
-		  
 		</div>
-	  <!--间隔行-->
+	 
 	
       <!--第二份教程-->
-	  <div class="card new_card" data-groups="[&quot;nature&quot;]"><a href="blog/blog2.jsp">
+	  <div class="card new_card" ><a href="about/about2.jsp">
           <figure class="pp-effect"><img class="img-fluid" src="images/4-nature.jpg" alt="Nature"/>
             <figcaption >
               <div >这是标题</div>
               <p style="width: 90%;padding-left: 20%; padding-top: 5%;">在这里添加简介....</p>
             </figcaption>
           </figure></a></div>
-	  <!--间隔行-->
 
-
-	 
       <!--第三份教程-->
-	  <div class="card new_card" data-groups="[&quot;food&quot;]"><a href="blog/blog3.jsp">
+	  <div class="card new_card" ><a href="about/about3.jsp">
+          <figure class="pp-effect"><img class="img-fluid" src="images/27-food.jpg" alt="Food"/>
+            <figcaption >
+              <div >这是标题</div>
+              <p style="width: 90%;padding-left: 20%; padding-top: 5%;">在这里添加简介....</p>
+            </figcaption>
+          </figure></a></div>
+		      <!--第三份教程-->
+	  <div class="card new_card" ><a href="about/about3.jsp">
+          <figure class="pp-effect"><img class="img-fluid" src="images/27-food.jpg" alt="Food"/>
+            <figcaption >
+              <div >这是标题</div>
+              <p style="width: 90%;padding-left: 20%; padding-top: 5%;">在这里添加简介....</p>
+            </figcaption>
+          </figure></a></div>
+		      <!--第三份教程-->
+	  <div class="card new_card" ><a href="about/about3.jsp">
           <figure class="pp-effect"><img class="img-fluid" src="images/27-food.jpg" alt="Food"/>
             <figcaption >
               <div >这是标题</div>
@@ -95,6 +110,5 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="scripts/main.js"></script>
   </body>
 </html>

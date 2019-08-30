@@ -12,17 +12,14 @@
 		<link rel="stylesheet" type="text/css" href="../../static/admin/layui/css/layui.css" />
 		<link rel="stylesheet" type="text/css" href="../../static/admin/css/admin.css" />
 	</head>
-	<script>
-		function chaCloor(field){
-			var pig = field.checked;
-			pig?field.nextSibling.style.backgroundColor="skyblue":field.nextSibling.style.backgroundColor="white";
-		}
-	</script>
+
 	<body>
 		<div class="page-content-wrap">
 			<form class="layui-form" action="">
 				<div class="layui-form-item">
 					<div class="layui-inline tool-btn">
+						<button class="layui-btn layui-btn-small layui-btn-normal go-btn hidden-xs" data-url="danye-detail.jsp"><i class="layui-icon">&#xe654;</i></button>
+						<button class="layui-btn layui-btn-small layui-btn-warm listOrderBtn hidden-xs" data-url="/admin/category/listorderall.jsp"><i class="iconfont">&#xe656;</i></button>
 					</div>
 					<div class="layui-inline">
 						<input type="text" name="title" placeholder="请输入标题" autocomplete="off" class="layui-input">
@@ -45,75 +42,49 @@
 						<tr>
 							<th><input type="checkbox" name="" lay-skin="primary" lay-filter="allChoose"></th>
 							<th class="hidden-xs">ID</th>
-							<th class="hidden-xs">姓名</th>
-							<th>学号</th>
-							<th>学院</th>
-							<th>报名时间</th>
-						    <th>邮箱</th>
-							<th>操作</th>
+							<th class="hidden-xs">排序</th>
+							<th>活动名称</th>
+							<th>发布时间</th>
+							<th> 查看</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td><input type="checkbox" onClick="chaCloor(this)" name="" lay-skin="primary" data-id="1"></td>
-							<td>1</td>
-							<td>黄晓明</td>
-							<td>2017303055</td>
-							<td>软件学院</td>
-							<td>2016.09.06</td>
-							<td>166453212313@qq.com</td>
+							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
+							<td class="hidden-xs">1</td>
+							<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
+							<td>关于我们</td>
+							<td>2016-09-06 20:46:16</td>
 							<td>
-								<div class="layui-inline">
-									
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.jsp"><i class="layui-icon">&#xe640;</i></button>
-								</div>
+							  <div class="layui-inline">
+								<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="form-detail.jsp"><i class="layui-icon">&#xe642;</i></button>
+</div>
 							</td>
 						</tr>
 						<tr>
 							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
-							<td>1</td>
-							<td>黄晓明</td>
-							<td>2017303055</td>
-							<td>软件学院</td>
-							<td>2016.09.06</td>
-							<td>166453212313@qq.com</td>
+							<td class="hidden-xs">1</td>
+							<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
+							<td>小猪佩奇</td>
+							<td>2016-09-06 20:46:16</td>
 							<td>
-								<div class="layui-inline">
-									
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.jsp"><i class="layui-icon">&#xe640;</i></button>
-								</div>
+							  <div class="layui-inline">
+								<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="form-detail.jsp"><i class="layui-icon">&#xe642;</i></button>
+</div>
 							</td>
 						</tr>
 						<tr>
 							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
-							<td>1</td>
-							<td>黄晓明</td>
-							<td>2017303055</td>
-							<td>软件学院</td>
-							<td>2016.09.06</td>
-							<td>166453212313@qq.com</td>
+							<td class="hidden-xs">1</td>
+							<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
+							<td>天线宝宝</td>
+							<td>2016-09-06 20:46:16</td>
 							<td>
-								<div class="layui-inline">
-									
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.jsp"><i class="layui-icon">&#xe640;</i></button>
-								</div>
+							  <div class="layui-inline">
+								<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="form-detail.jsp"><i class="layui-icon">&#xe642;</i></button>
+</div>
 							</td>
 						</tr>
-						<tr>
-							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
-							<td>1</td>
-							<td>黄晓明</td>
-							<td>2017303055</td>
-							<td>软件学院</td>
-							<td>2016.09.06</td>
-							<td>166453212313@qq.com</td>
-							<td>
-								<div class="layui-inline">
-									
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.jsp"><i class="layui-icon">&#xe640;</i></button>
-								</div>
-							</td>
-						</tr>						
 					</tbody>
 				</table>
 				<div class="page-wrap">
