@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
 
@@ -12,134 +13,161 @@
 	</head>
 
 	<body>
-		<div class="page-content-wrap clearfix">
-				<form class="layui-form">
-					<div class="layui-tab">
-						<ul class="layui-tab-title">
-						  <li><a href="danye-list.html">图片列表</a></li>
-						  <li class="layui-this">图片管理</li>
+		<div class="page-content-wrap">
+			<form class="layui-form" action="">
+				<div class="layui-form-item">
+					<div class="layui-inline tool-btn">
+						<button class="layui-btn layui-btn-small layui-btn-normal go-btn hidden-xs" data-url="danye-detail.html"><i class="layui-icon">&#xe654;</i></button>
+						<button class="layui-btn layui-btn-small layui-btn-warm listOrderBtn hidden-xs" data-url="/admin/category/listorderall.html"><i class="iconfont">&#xe656;</i></button>
+					</div>
+					<div class="layui-inline">
+						<input type="text" name="title" placeholder="请输入标题" autocomplete="off" class="layui-input">
+					</div>
+					<button class="layui-btn layui-btn-normal" lay-submit="search">搜索</button>
+				</div>
+			</form>
+			<div class="layui-form" id="table-list">
+				<table class="layui-table" lay-even lay-skin="nob">
+					<colgroup>
+						<col width="50">
+						<col class="hidden-xs" width="50">
+						<col class="hidden-xs" width="100">
+						<col>
+						<col class="hidden-xs" width="200">
+						<col width="80">
+						<col width="150">
+					</colgroup>
+					<thead>
+						<tr>
+							<th><input type="checkbox" name="" lay-skin="primary" lay-filter="allChoose"></th>
+							<th class="hidden-xs">ID</th>
+							<th class="hidden-xs">排序</th>
+							<th>图片名称</th>
+							<th>发布时间</th>
+							<th>状态</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
+							<td class="hidden-xs">1</td>
+							<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
+							<td>关于我们</td>
+							<td>2016-09-06 20:46:16</td>
+							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
+							<td>
+								<div class="layui-inline">
+									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
+							<td class="hidden-xs">1</td>
+							<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
+							<td>产品中心</td>
+							<td>2016-09-06 20:46:16</td>
+							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
+							<td>
+								<div class="layui-inline">
+									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
+							<td class="hidden-xs">1</td>
+							<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
+							<td>新闻中心</td>
+							<td>2016-09-06 20:46:16</td>
+							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
+							<td>
+								<div class="layui-inline">
+									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
+							<td class="hidden-xs">1</td>
+							<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
+							<td>业务范围</td>
+							<td>2016-09-06 20:46:16</td>
+							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
+							<td>
+								<div class="layui-inline">
+									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
+							<td class="hidden-xs">1</td>
+							<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
+							<td>联系我们</td>
+							<td>2016-09-06 20:46:16</td>
+							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
+							<td>
+								<div class="layui-inline">
+									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
+							<td class="hidden-xs">1</td>
+							<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
+							<td>在线留言</td>
+							<td>2016-09-06 20:46:16</td>
+							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
+							<td>
+								<div class="layui-inline">
+									<button class="layui-btn layui-btn-mini layui-btn-normal go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
+									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="page-wrap">
+						<ul class="pagination">
+							<li class="disabled"><span>«</span></li>
+							<li class="active"><span>1</span></li>
+							<li>
+								<a href="#">2</a>
+							</li>
+							<li>
+								<a href="#">»</a>
+							</li>
 						</ul>
-						<div class="layui-tab-content">
-						  <div class="layui-tab-item"></div>
-							<div class="layui-tab-item layui-show">
-								<div class="layui-form-item">
-								  <label class="layui-form-label">图片名称：</label>
-								  <div class="layui-input-block">
-										<inp图片ut type="text" name="name" required lay-verify="required" placeholder="请输入文章名称" autocomplete="off" class="layui-input">
-									</div>
-								</div>
-								<div class="layui-form-item">
-									<label class="layui-form-label">选择模板：</label>
-									<div class="layui-input-block">
-										<select name="category" lay-verify="required">
-											<option value="">请选择模板</option>
-											<option value="1">article.html</option>
-											<option value="2">list.html</option>
-											<option value="2">page.html</option>
-										</select>
-									</div>
-								</div>
-								<div class="layui-form-item">
-									<label class="layui-form-label">图像上传：</label>
-									<div class="layui-input-block">
-										<input type="file" name="file（可随便定义）" class="layui-upload-file">
-									</div>
-								</div>
-								
-								<div class="layui-form-item layui-form-text">
-								  <label class="layui-form-label">图片内容：</label>
-								  <div class="layui-input-block">
-										<textarea class="layui-textarea layui-hide" name="content" lay-verify="content" id="LAY_demo_editor"></textarea>
-									</div>
-								</div>
-								<div class="layui-form-item">
-									<label class="layui-form-label">关键字：</label>
-									<div class="layui-input-block">
-										<input type="text" name="laiyuan" placeholder="请输入关键字" autocomplete="off" class="layui-input">
-									</div>
-								</div>
-								<div class="layui-form-item layui-form-text">
-									<label class="layui-form-label">描述：</label>
-									<div class="layui-input-block">
-										<textarea placeholder="请输入内容" class="layui-textarea"></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="layui-tab-item">
-								
-							</div>
-						</div>
 					</div>
-					<div class="layui-form-item" style="padding-left: 10px;">
-						<div class="layui-input-block">
-							<button class="layui-btn layui-btn-normal" lay-submit lay-filter="formDemo">立即提交</button>
-							<button type="reset" class="layui-btn layui-btn-primary">重置</button>
-						</div>
-					</div>
-				</form>
+			</div>
 		</div>
-		<script type="text/javascript">
-			var SCOPE = {
-				static: '/static',
-				index: '/admin/category/index.html',
-				add: 'add.html',
-				save: '/admin/category/save.html',
-				edit: 'add.html',
-				updateEdit: '/admin/category/updateedit.html',
-				status: '/admin/category/updatestatus.html',
-				del: '/admin/category/del.html',
-				delAll: '/admin/category/deleteall.html',
-				listOrderAll: '/admin/category/listorderall.html'
-			}
-		</script>
 		<script src="../../static/admin/layui/layui.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../../static/admin/js/common.js" type="text/javascript" charset="utf-8"></script>
 		<script>
-			
-			layui.use(['form', 'jquery', 'laydate', 'layer', 'laypage', 'dialog', 'element', 'upload', 'layedit'], function() {
-				var form = layui.form(),
-					layer = layui.layer,
-					$ = layui.jquery,
-					laypage = layui.laypage,
-					laydate = layui.laydate,
-					layedit = layui.layedit,
-					element = layui.element(),
-					dialog = layui.dialog;
+			layui.use(['form', 'jquery', 'layer', 'dialog'], function() {
+				var $ = layui.jquery;
 
-				//获取当前iframe的name值
-				var iframeObj = $(window.frameElement).attr('name');
-				//创建一个编辑器
-				var editIndex = layedit.build('LAY_demo_editor', {
-					tool: ['strong' //加粗
-						, 'italic' //斜体
-						, 'underline' //下划线
-						, 'del' //删除线
-						, '|' //分割线
-						, 'left' //左对齐
-						, 'center' //居中对齐
-						, 'right' //右对齐
-						, 'link' //超链接
-						, 'unlink' //清除链接
-						, 'image' //插入图片
-					],
-					height: 100
-				})
-				//全选
-				form.on('checkbox(allChoose)', function(data) {
-					var child = $(data.elem).parents('table').find('tbody input[type="checkbox"]');
-					child.each(function(index, item) {
-						item.checked = data.elem.checked;
-					});
-					form.render('checkbox');
-				});
-				form.render();
+				//修改状态
+				$('#table-list').on('click', '.table-list-status', function() {
+					var That = $(this);
+					var status = That.attr('data-status');
+					var id = That.parent().attr('data-id');
+					if(status == 1) {
+						That.removeClass('layui-btn-normal').addClass('layui-btn-warm').html('隐藏').attr('data-status', 2);
+					} else if(status == 2) {
+						That.removeClass('layui-btn-warm').addClass('layui-btn-normal').html('显示').attr('data-status', 1);
 
-				layui.upload({
-					url: '上传接口url',
-					success: function(res) {
-						console.log(res); //上传成功返回值，必须为json格式
 					}
-				});
+				})
+
 			});
 		</script>
 	</body>

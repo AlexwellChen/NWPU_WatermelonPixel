@@ -6,7 +6,7 @@
 		<meta name="renderer" content="webkit">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title>ç½ç«åå°ç®¡çæ¨¡ç</title>
+		<title>网站后台</title>
 		<link rel="stylesheet" type="text/css" href="../../static/admin/layui/css/layui.css" />
 		<link rel="stylesheet" type="text/css" href="../../static/admin/css/admin.css" />
 	</head>
@@ -22,17 +22,17 @@
 								<button class="layui-btn layui-btn-small layui-btn-warm listOrderBtn hidden-xs" data-url="activity-add.jsp"><i class="iconfont">&#xe656;</i></button>
 							</div>
 							<div class="layui-inline">
-								<input type="text" name="title" required lay-verify="required" placeholder="è¯·è¾å¥æ é¢" autocomplete="off" class="layui-input">
+								<input type="text" name="title" required lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
 							</div>
 							<div class="layui-inline">
 								<select name="states" lay-filter="status">
-									<option value="">è¯·éæ©ä¸ä¸ªç¶æ</option>
-									<option value="010">æ­£å¸¸</option>
-									<option value="021">åæ­¢</option>
-									<option value="0571">å é¤</option>
+									<option value="">请选择一个状态</option>
+									<option value="010">正常</option>
+									<option value="021">停止</option>
+									<option value="0571">删除</option>
 								</select>
 							</div>
-							<button class="layui-btn layui-btn-normal" lay-submit="search">æç´¢</button>
+							<button class="layui-btn layui-btn-normal" lay-submit="search">搜索</button>
 						</div>
 					</form>
 					<div class="layui-form" id="table-list">
@@ -51,12 +51,12 @@
 								<tr>
 									<th><input type="checkbox" name="" lay-skin="primary" lay-filter="allChoose"></th>
 									<th class="hidden-xs">ID</th>
-									<th class="hidden-xs">æåº</th>
-									<th>åç§°</th>
-									<th class="hidden-xs">åå»ºæ¶é´</th>
-									<th class="hidden-xs">ä¿®æ¹æ¶é´</th>
-									<th>ç¶æ</th>
-									<th>æä½</th>
+									<th class="hidden-xs">排序</th>
+									<th>名称</th>
+									<th class="hidden-xs">创建时间</th>
+									<th class="hidden-xs">修改时间</th>
+									<th>状态</th>
+									<th>操作</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -64,10 +64,10 @@
 									<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
 									<td class="hidden-xs">1</td>
 									<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
-									<td>ç©å·</td>
+									<td>玩具</td>
 									<td class="hidden-xs">1989-10-14</td>
 									<td class="hidden-xs">1989-10-14</td>
-									<td><button class="layui-btn layui-btn-mini layui-btn-normal">æ­£å¸¸</button></td>
+									<td><button class="layui-btn layui-btn-mini layui-btn-normal">正常</button></td>
 									<td>
 										<div class="layui-inline">
 											<button class="layui-btn layui-btn-small layui-btn-normal go-btn" data-id="1" data-url="activity-detail.jsp"><i class="layui-icon">&#xe642;</i></button>
@@ -79,10 +79,10 @@
 									<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
 									<td class="hidden-xs">1</td>
 									<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
-									<td>ç©å·</td>
+									<td>玩具</td>
 									<td class="hidden-xs">1989-10-14</td>
 									<td class="hidden-xs">1989-10-14</td>
-									<td><button class="layui-btn layui-btn-mini layui-btn-normal">æ­£å¸¸</button></td>
+									<td><button class="layui-btn layui-btn-mini layui-btn-normal">正常</button></td>
 									<td>
 										<div class="layui-inline">
 											<button class="layui-btn layui-btn-small layui-btn-normal go-btn" data-id="1" data-url="article-detail.jsp"><i class="layui-icon">&#xe642;</i></button>
@@ -94,13 +94,13 @@
 						</table>
 						<div class="page-wrap">
 							<ul class="pagination">
-								<li class="disabled"><span>Â«</span></li>
+								<li class="disabled"><span>«</span></li>
 								<li class="active"><span>1</span></li>
 								<li>
 									<a href="#">2</a>
 								</li>
 								<li>
-									<a href="#">Â»</a>
+									<a href="#">»</a>
 								</li>
 							</ul>
 						</div>
