@@ -24,6 +24,7 @@
 					out.print("|"); 
 					out.print(rs.getString(4));
 					out.print("<br>"); 
+					out.print("<br>");
 					} 
 				
 	
