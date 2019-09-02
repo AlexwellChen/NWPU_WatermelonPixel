@@ -11,16 +11,59 @@
 		<title>网站后台管理模版</title>
 		<link rel="stylesheet" type="text/css" href="../../static/admin/layui/css/layui.css" />
 		<link rel="stylesheet" type="text/css" href="../../static/admin/css/admin.css" />
+		<style>
+.inputfile {
+    width: 0.1px; 
+    height: 0.1px; 
+    opacity: 0; 
+    overflow: hidden; 
+    position: absolute; 
+    z-index: -1;
+}
+.inputfile + label {
+    height:100px;
+    width:180px;
+    color: white;
+    background-color: #ffffff;
+    display: inline-block;
+    border:2px solid #CCCCCC;
+}
+
+.line_heng{
+		
+		margin: 2.3% 50% ;
+		width: 4px;
+		height: 40px; 
+		background: #ccc;
+}
+.line_shu{
+		
+		margin: -13% 36% ;
+		width: 60px;
+		height: 4px; 
+		background: #ccc;
+}
+.img_po{
+border:0.1px solid #CCCCCC;
+		margin:-4.3% 0%;
+		width:181px;
+		height:103px;
+}
+#category{
+	
+}
+</style>
 	</head>
 
 	<body>
 		<div class="page-content-wrap">
-				<form class="layui-form">
+				<form  method="post" action="../../../Photography_Course/uptodb.jsp" enctype="multipart/form-data">
 					<div class="layui-tab" style="margin: 0;">
 						<ul class="layui-tab-title">
 						  <li><a href="activity-list.jsp">活动列表</a></li>
 						  <li class="layui-this">活动详情</li>
 						</ul>
+						
 						<div class="layui-tab-content">
 						  <div class="layui-tab-item"></div>
 							<div class="layui-tab-item layui-show">
@@ -34,28 +77,31 @@
 									<label class="layui-form-label">分类栏目：</label>
 									<div class="layui-input-block">
 										<select name="category" lay-verify="required">
-											<option value="">请选择分类栏目</option>
-											<optgroup label="新闻中心">
+											
 												<option value="1" selected="">公司新闻</option>
 												<option value="2">行业新闻</option>
-											</optgroup>
+											
 										</select>
 									</div>
 								</div>
+								
 								<div class="layui-form-item">
 									<label class="layui-form-label">图像上传：</label>
-									<div class="layui-input-block">
-										<input type="file" name="file（可随便定义）" class="layui-upload-file">
-									</div>
+									<div class="form-group" >
+        									<input type="file" name="image" accept="image/*" onchange="imgChange(this);" id="file" class="inputfile" />
+											<label for="file"><div class="line_heng"></div>
+											<div class="line_shu"></div>
+											<div id="preview">
+												<img id="imghead" class="img_po"/> <!--图片显示位置-->
+											</div>
+											</label>
+											
+											
+        
+   									 </div>
 								</div>
-								<div class="layui-form-item">
-									<label class="layui-form-label">标签：</label>
-									<div class="layui-input-block">
-										<input type="checkbox" name="label[tj]" title="推荐" checked>
-										<input type="checkbox" name="label[zd]" title="置顶">
-										<input type="checkbox" name="label[hot]" title="热门">
-									</div>
-								</div>
+								
+								
 								<div class="layui-form-item layui-form-text">
 								  <label class="layui-form-label">活动内容：</label>
 								  <div class="layui-input-block">
@@ -71,7 +117,7 @@
 								<div class="layui-form-item layui-form-text">
 									<label class="layui-form-label">描述：</label>
 									<div class="layui-input-block">
-										<textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+										<textarea placeholder="请输入内容" class="layui-textarea" name="描述"></textarea>
 									</div>
 								</div>
 								<div class="layui-form-item">
@@ -91,13 +137,27 @@
 					</div>
 					<div class="layui-form-item" style="padding-left: 10px;">
 						<div class="layui-input-block">
-							<button class="layui-btn layui-btn-normal" lay-submit lay-filter="formDemo">立即提交</button>
+							<button class="layui-btn layui-btn-normal" lay-submit lay-filter="formDemo" id="input">立即提交</button>
 							<button type="reset" class="layui-btn layui-btn-primary">重置</button>
 						</div>
 					</div>
 				</form>
 		</div>
+		
 		<script type="text/javascript">
+	       $("#btn_add").click(function () {
+	            
+	            $('#myModal').modal();
+	        });
+		// 选择图片显示
+		function imgChange(obj) {
+		//获取点击的文本框
+		var file =document.getElementById("file");
+		var imgUrl =window.URL.createObjectURL(file.files[0]);
+		var img =document.getElementById('imghead');
+		img.setAttribute('src',imgUrl); // 修改img标签src属性值
+		};
+		
 			var SCOPE = {
 				static: '/static',
 				index: '/admin/category/index.jsp',
@@ -114,6 +174,17 @@
 		<script src="../../static/admin/layui/layui.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../../static/admin/js/common.js" type="text/javascript" charset="utf-8"></script>
 		<script>
+		
+		
+			// 选择图片显示
+			function imgChange(obj) {
+			//获取点击的文本框
+			var file =document.getElementById("file");
+			var imgUrl =window.URL.createObjectURL(file.files[0]);
+			var img =document.getElementById('imghead');
+			img.setAttribute('src',imgUrl); // 修改img标签src属性值
+			};
+			
 			
 			layui.use(['form', 'jquery', 'laydate', 'layer', 'laypage', 'dialog',  'element', 'upload', 'layedit'], function() {
 				var form = layui.form(),

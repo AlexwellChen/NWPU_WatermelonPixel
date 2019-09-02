@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>watermelonpixel_new</display-name>
+  <display-name>test</display-name>
   <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
     <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
-    <servlet-name>getRegister</servlet-name>
-    <servlet-class>watermelonpixel_new.getRegister</servlet-class>
-    <init-param>
-      <param-name>driveName</param-name>
-      <param-value>sun.jdbc.odbc.Jdbc0dbcDriver</param-value>
-    </init-param>
-    <init-param>
-      <param-name>url</param-name>
-      <param-value>jdbc:odbc:baoming</param-value>
-    </init-param>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>getRegister</servlet-name>
-    <url-pattern>/watermelonpixel_new/getRegister</url-pattern>
-  </servlet-mapping>
+  
+  <context-param> 
+    <description>文件上传地址</description> 
+    <param-name>photo-upload</param-name> 
+    <!-- 需修改路径  E:/我的软件/JAVA/web_photo/WebContent/Photography_Course/images/-->
+    <param-value>E:/我的软件/JAVA/java_web/web_photo/WebContent/Photography_Course/images/</param-value> 
+</context-param>
+
 </web-app>
