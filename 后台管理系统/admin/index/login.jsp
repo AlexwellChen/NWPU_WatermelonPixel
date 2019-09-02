@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <html>
 
 	<head>
@@ -14,21 +14,14 @@
 			<div class="m-login">
 				<h3>后台系统登录</h3>
 				<div class="m-login-warp">
-					<form class="layui-form">
+					<form class="layui-form" action="../login" method="post">
 						<div class="layui-form-item">
 							<input type="text" name="title" required lay-verify="required" placeholder="用户名" autocomplete="off" class="layui-input">
 						</div>
 						<div class="layui-form-item">
 							<input type="text" name="password" required lay-verify="required" placeholder="密码" autocomplete="off" class="layui-input">
 						</div>
-						<div class="layui-form-item">
-							<div class="layui-inline">
-								<input type="text" name="verity" required lay-verify="required" placeholder="验证码" autocomplete="off" class="layui-input">
-							</div>
-							<div class="layui-inline">
-								<img class="verifyImg" onclick="this.src=this.src+'?c='+Math.random();" src="../../static/admin/images/login/yzm.jpg" />
-							</div>
-						</div>
+						
 						<div class="layui-form-item m-login-btn">
 							<div class="layui-inline">
 								<button class="layui-btn layui-btn-normal" lay-submit lay-filter="login">登录</button>

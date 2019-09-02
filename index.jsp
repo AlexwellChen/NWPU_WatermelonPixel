@@ -203,6 +203,8 @@
         <p>Copyright © 2019 NWPU Photography Association. All rights reserved.</p>
 		  <img src="images/logo/WMPixel.png" height="40" style="margin-left: 10px"/>
 		  <p> </p>
+		  <p><a href="后台管理系统/admin/index/index.jsp">后台管理</a></p>
+		  <p> </p>
 		  <p> 陕ICP备19016691号-1 </p>
       </div>
     </div>
