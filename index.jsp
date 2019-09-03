@@ -33,9 +33,9 @@
 			
             <li class="dropdown"><a href="Photography_Course/index.jsp" class="dropdown-toggle" data-toggle="dropdown"> 教程 <strong class="caret"></strong> </a>
               <ul class="dropdown-menu">
-                    <li><a href="Photography_Course/about.jsp">前期拍摄教程</a></li>
+                    <li><a href="Photography_Course/about.jsp">前期教程</a></li>
 					<li class="divider"></li>
-                    <li><a href="Photography_Course/blog.jsp">后期图像处理教程</a></li>
+                    <li><a href="Photography_Course/blog.jsp">后期教程</a></li>
                 </ul>
             </li>
 			
@@ -110,7 +110,6 @@
             <h2 class="media-heading">加入我们</h2><br>
        	 点击下方的报名入口就可以啦！
 			</div>
-			
         </div>
       </div>
     </div>

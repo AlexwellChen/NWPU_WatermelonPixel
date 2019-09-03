@@ -8,7 +8,7 @@
 		<meta name="renderer" content="webkit">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title>网站后台管理</title>
+		<title>活动发布</title>
 		<link rel="stylesheet" type="text/css" href="../../static/admin/layui/css/layui.css" />
 		<link rel="stylesheet" type="text/css" href="../../static/admin/css/admin.css" />
 		<style>
@@ -59,7 +59,7 @@ border:0.1px solid #CCCCCC;
 
 	<body>
 		<div class="page-content-wrap">
-				<form  method="post" action="../../../Photography_Course/uptodb.jsp" enctype="multipart/form-data">
+				<form  method="post" action="../../../activity/uptodb.jsp" enctype="multipart/form-data">
 					<div class="layui-tab" style="margin: 0;">
 						<ul class="layui-tab-title">
 						  <li><a href="activity-list.jsp">活动列表</a></li>
@@ -70,7 +70,7 @@ border:0.1px solid #CCCCCC;
 							<div class="layui-tab-item layui-show">
 							
 								<div class="layui-form-item">
-								  <label class="layui-form-label">教程名称：</label>
+								  <label class="layui-form-label">活动名称：</label>
 								  <div class="layui-input-block">
 										<input type="text" name="name" required lay-verify="required" placeholder="请输入活动名称" autocomplete="off" class="layui-input">
 									</div>
@@ -80,8 +80,8 @@ border:0.1px solid #CCCCCC;
 									<div class="layui-input-block">
 										<select name="category" >
 											
-												<option value="1">前期教程</option>
-												<option value="2">后期教程</option>
+												<option value="1">培训讲座</option>
+												<option value="2">外拍活动</option>
 											
 										</select>
 									</div>
@@ -105,7 +105,7 @@ border:0.1px solid #CCCCCC;
 								
 								
 								<div class="layui-form-item layui-form-text">
-								  <label class="layui-form-label">教程内容：</label>
+								  <label class="layui-form-label">活动内容：</label>
 								  <div class="layui-input-block">
 										<textarea class="layui-textarea layui-hide" name="content" lay-verify="content" id="LAY_demo_editor"></textarea>
 									</div>

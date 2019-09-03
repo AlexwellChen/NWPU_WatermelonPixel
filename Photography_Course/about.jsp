@@ -1,5 +1,9 @@
-<%@page pageEncoding="utf-8" contentType="text/html;charset=utf-8"%>
-<html lang="zh">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+  <%@ page import="java.io.*,java.util.*,java.sql.*"%>
+<%@ page import="javax.servlet.http.*,javax.servlet.*" %>
+<!DOCTYPE html>
+<html lang="en-US">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +14,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <link href="styles/main.css" rel="stylesheet">
-	<link href="styles/about_blog.css" rel="stylesheet">
+<!--	<link href="styles/about_blog.css" rel="stylesheet">-->
   </head>
   <body id="top">
     <div class="page">
@@ -21,11 +25,11 @@
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a class="nav-link" href="index.jsp">主页</a> 
-				  </li>
+                  <li class="nav-item"><a class="nav-link" href="../index.jsp">首页</a>
+                  </li>
                   <li class="nav-item active"><a class="nav-link" href="about.jsp">前期教程</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="blog.jsp">后期制作</a>
+                  <li class="nav-item"><a class="nav-link" href="blog.jsp">后期教程</a>
                   </li>
                 </ul>
               </div>
@@ -37,45 +41,72 @@
         <div class="container">
 <div class="container pp-section">
 
-      <h1 style="margin-bottom: 5%;font-family: 行楷；" class="h3" align="center" > 前期教程.</h1>
+      <h1 style="margin-bottom: 5%;" class="h3" align="center" > 前期教程</h1>
 
 </div>
 <div class="container px-0">
   <div class="pp-gallery">
     <div class="card-columns">
-		
-	  <!--第一份教程-->
-      <div class="card new_card" data-groups="[&quot;nature&quot;]"><a href="about/about.jsp">
-          <figure class="pp-effect"><img class="img-fluid" src="images/1-nature.jpg" alt="Nature"/>
-            <figcaption >
-              <div >这是标题</div>
-              <p style="width: 90%;padding-left: 20%; padding-top: 5%;">在这里添加简介....</p>
-            </figcaption>
-          </figure></a>
-		</div>
-	 
-	
-      <!--第二份教程-->
-	  <div class="card new_card" data-groups="[&quot;nature&quot;]"><a href="#">
-          <figure class="pp-effect"><img class="img-fluid" src="images/4-nature.jpg" alt="Nature"/>
-            <figcaption >
-              <div >这是标题</div>
-              <p style="width: 90%;padding-left: 20%; padding-top: 5%;">在这里添加简介....</p>
-            </figcaption>
-          </figure></a></div>
 
-      <!--第三份教程-->
-	  <div class="card new_card" data-groups="[&quot;food&quot;]"><a href="#">
-          <figure class="pp-effect"><img class="img-fluid" src="images/27-food.jpg" alt="Food"/>
+          <% 
+      	String  user="root";    
+          Connection  conn=null;
+          	String  password="cfz990221";       //密码为自己数据库的密码   
+             Class.forName("com.mysql.cj.jdbc.Driver").newInstance(); //加载JDBC驱动程序   
+
+             String  url="jdbc:mysql:"+ "//127.0.0.1:3306/test?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT"; //bin_db为你的数据库的名称   
+             //String url="jdbc:mysql://localhost:3306/bin_db?useUnicode=true&characterEncoding=utf-8";
+             //String  url="jdbc:mysql:"+ "//127.0.0.1:3306/bin_db+?user="+user+"&password="+password;
+           conn= DriverManager.getConnection(url,user,password);
+          Statement statement;
+          try {
+              statement = conn.createStatement();
+              //需要执行的数据库操作语句
+              String sql = "select * from activity_detail_about";
+              //执行数据库操作语句并返回结果
+              ResultSet rs = statement.executeQuery(sql);
+           
+
+              String name = null;
+              String category = null;
+              String content=null;
+              String important_word=null;
+              String description=null;
+              String writer = null;
+              String Image=null;
+              
+              while(rs.next())
+              {
+                  name = rs.getString("pagename");
+                  Image = rs.getString("photoname");
+                  content=rs.getString("page");
+                  important_word=rs.getString("important_word");
+                  description = rs.getString("description");
+                  writer = rs.getString("builder");
+                  
+                 %>
+                  <div class="card new_card" ><a href="about/about4.jsp?name=<%=name%>">
+          <figure class="pp-effect"><img  type="submit" class="img-fluid" src='<%=Image %>'alt="Food"/>
             <figcaption >
-              <div >这是标题</div>
-              <p style="width: 90%;padding-left: 20%; padding-top: 5%;">在这里添加简介....</p>
+              <div ><%=name %></div>
+              <p style="width: 90%;padding-left: 20%; padding-top: 5%;"><%=description%><br><%=writer %></p>
             </figcaption>
           </figure></a></div>
+       
+                 <% 
+              }
+            
+              rs.close();
+          } catch (SQLException e) {
+              // TODO Auto-generated catch block
+              e.printStackTrace();
+          }
+     
+ %>
+     
     </div>
   </div>
 </div>
-
 <div class="pp-section"></div></div>
       </div>
       <footer class="pp-footer">
@@ -92,6 +123,6 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="scripts/main.js"></script>
+  
   </body>
 </html>

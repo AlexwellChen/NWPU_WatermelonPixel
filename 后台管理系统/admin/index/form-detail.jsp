@@ -17,11 +17,11 @@
 				ResultSet rs = stmt.executeQuery(sql); 
 				while(rs.next()) { 
 					out.print(rs.getString(1)+" ");
-					out.print("|"); 
+					out.print(" | "); 
 					out.print(rs.getString(2)+" "); 
-					out.print("|"); 
+					out.print("| "); 
 					out.print(rs.getString(3)+" "); 
-					out.print("|"); 
+					out.print("| "); 
 					out.print(rs.getString(4));
 					out.print("<br>"); 
 					out.print("<br>");

@@ -235,13 +235,6 @@
 						text-align: center; line-height: 32px;
 					}
 				</style>
-				<a href="#" class="first">First</a>
-				<a href="#" class="prev">← Previous</a>
-				<a href="#" class="num">1</a>
-				<a href="#" class="num">2</a>
-				<a href="#" class="num">3</a>
-				<a href="#" class="next">Next →</a>
-				<a href="#" class="last">Last</a>
             </div>
         </div>
     </div>
