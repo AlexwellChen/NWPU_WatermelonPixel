@@ -80,8 +80,8 @@ border:0.1px solid #CCCCCC;
 									<div class="layui-input-block">
 										<select name="category" >
 											
-												<option value="1">培训讲座</option>
-												<option value="2">外拍活动</option>
+												<option value="lecture">培训讲座</option>
+												<option value="outside">外拍活动</option>
 											
 										</select>
 									</div>
@@ -140,89 +140,5 @@ border:0.1px solid #CCCCCC;
 					</div>
 				</form>
 		</div>
-		<script type="text/javascript">
-		
-		// 选择图片显示
-		function imgChange(obj) {
-		//获取点击的文本框
-		var file =document.getElementById("file");
-		var imgUrl =window.URL.createObjectURL(file.files[0]);
-		var img =document.getElementById('imghead');
-		img.setAttribute('src',imgUrl); // 修改img标签src属性值
-		};
-		
-			var SCOPE = {
-				static: '/static',
-				index: '/admin/category/index.jsp',
-				add: 'add.jsp',
-				save: '/admin/category/save.jsp',
-				edit: 'add.jsp',
-				updateEdit: '/admin/category/updateedit.jsp',
-				status: '/admin/category/updatestatus.jsp',
-				del: '/admin/category/del.jsp',
-				delAll: '/admin/category/deleteall.jsp',
-				listOrderAll: '/admin/category/listorderall.jsp'
-			}
-		</script>
-		<script src="../../static/admin/layui/layui.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../../static/admin/js/common.js" type="text/javascript" charset="utf-8"></script>
-		<script>
-			// 选择图片显示
-			function imgChange(obj) {
-			//获取点击的文本框
-			var file =document.getElementById("file");
-			var imgUrl =window.URL.createObjectURL(file.files[0]);
-			var img =document.getElementById('imghead');
-			img.setAttribute('src',imgUrl); // 修改img标签src属性值
-			};
-			
-			
-			layui.use(['form', 'jquery', 'laydate', 'layer', 'laypage', 'dialog',  'element', 'upload', 'layedit'], function() {
-				var form = layui.form(),
-					layer = layui.layer,
-					$ = layui.jquery,
-					laypage = layui.laypage,
-					laydate = layui.laydate,
-					layedit = layui.layedit,
-					element = layui.element(),
-					dialog = layui.dialog;
-
-				//获取当前iframe的name值
-				var iframeObj = $(window.frameElement).attr('name');
-				//创建一个编辑器
-				var editIndex = layedit.build('LAY_demo_editor', {
-					tool: ['strong' //加粗
-						, 'italic' //斜体
-						, 'underline' //下划线
-						, 'del' //删除线
-						, '|' //分割线
-						, 'left' //左对齐
-						, 'center' //居中对齐
-						, 'right' //右对齐
-						, 'link' //超链接
-						, 'unlink' //清除链接
-						, 'image' //插入图片
-					],
-					height: 100
-				})
-				//全选
-				form.on('checkbox(allChoose)', function(data) {
-					var child = $(data.elem).parents('table').find('tbody input[type="checkbox"]');
-					child.each(function(index, item) {
-						item.checked = data.elem.checked;
-					});
-					form.render('checkbox');
-				});
-				form.render();
-
-				layui.upload({
-					url: '上传接口url',
-					success: function(res) {
-						console.log(res); //上传成功返回值，必须为json格式
-					}
-				});
-			});
-		</script>
 	</body>
-
 </html>

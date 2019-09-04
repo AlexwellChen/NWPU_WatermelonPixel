@@ -63,7 +63,7 @@
               String description=null;
               String writer = null;
               String Image=null;
-             
+             int mark=0;
              
               while(rs.next())
               {   
@@ -75,7 +75,7 @@
                   important_word=rs.getString("important_word");
                   description = rs.getString("description");
                   writer = rs.getString("builder");
-            	
+            	  mark=rs.getInt("mark");
                   
                   %>
              
@@ -84,12 +84,15 @@
 <div class="pp-about container px-0 pp-section">
   <div class="row mb-2">
     <div class="col-md-9">
-		
+		<h1 style="text-align:left">Part<%=mark%></h1>
       
       <p class="text-muted" style="text-indent:2em"><%=important_word%></p>
 	  <p class="text-muted"><%=content %>
     </div>
-       <%} }
+    
+
+  </div><img class="img-fluid pp-about-img" src="../<%=Image %>" alt="About Image">
+     <%} }
             	 
             
               rs.close();
@@ -99,8 +102,6 @@
           }
      
  %>
-
-  </div><img class="img-fluid pp-about-img" src="../images/112.jpg" alt="About Image">
 	<br>
 	<br>
 	<br>

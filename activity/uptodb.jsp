@@ -124,22 +124,12 @@
 			conn = DriverManager.getConnection(url, user, password);
 
 			Statement sql = conn.createStatement();
-			if (formvalue[1].equals("1")) {
-				String sql_insert = "insert into huodong_detail_about values(" + "'" + formvalue[0] + "'" + "," + "'"
+			
+				String sql_insert = "insert into huodong_detail values(" + "'" + formvalue[0] + "'" + "," + "'" + formvalue[1] + "'" + "," + "'"
 						+ photoPath + "'" + "," + "'" + formvalue[2] + "'" + "," + "'" + formvalue[3] + "'" + "," + "'"
 						+ formvalue[4] + "'" + "," + "'" + formvalue[5] + "'" + ")";
 				System.out.print(sql_insert);
 				sql.execute(sql_insert);
-
-			}
-			if (formvalue[1].equals("2")) {
-				String sql_insert = "insert into huodong_detail_about values(" + "'" + formvalue[0] + "'" + "," + "'"
-						+ photoPath + "'" + "," + "'" + formvalue[2] + "'" + "," + "'" + formvalue[3] + "'" + "," + "'"
-						+ formvalue[4] + "'" + "," + "'" + formvalue[5] + "'" + ")";
-				System.out.print(sql_insert);
-				sql.execute(sql_insert);
-
-			}
 
 			conn.close();
 

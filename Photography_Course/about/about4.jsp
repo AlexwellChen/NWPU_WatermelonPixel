@@ -63,19 +63,20 @@
               String description=null;
               String writer = null;
               String Image=null;
-            
+             int mark=0;
              
               while(rs.next())
               {   
             	  
                   name = rs.getString("pagename");
                   if(name.equals(name1)){
+                	out.println("进入判断");
                   Image = rs.getString("photoname");
                   content=rs.getString("page");
                   important_word=rs.getString("important_word");
                   description = rs.getString("description");
                   writer = rs.getString("builder");
-            	
+            	  
                   
                   %>
              
@@ -84,14 +85,17 @@
 <div class="pp-about container px-0 pp-section">
   <div class="row mb-2">
     <div class="col-md-9">
-		
+		<h1 style="text-align:left">Part<%=mark%></h1>
       
       <p class="text-muted" style="text-indent:2em"><%=important_word%></p>
 	  <p class="text-muted"><%=content %>
     </div>
-       <%} }
-            	 
-            
+       
+  </div><img class="img-fluid pp-about-img" src="../<%=Image %>" alt="About Image"><!-- 修改部分，可以在教程内部动态改变 -->
+  <% 
+                  } }
+         	 
+              
               rs.close();
           } catch (SQLException e) {
               // TODO Auto-generated catch block
@@ -100,7 +104,6 @@
      
  %>
 
-  </div><img class="img-fluid pp-about-img" src="../images/112.jpg" alt="About Image">
 	<br>
 	<br>
 	<br>

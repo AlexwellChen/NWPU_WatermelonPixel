@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"%>
   <%@ page import="java.io.*,java.util.*,java.sql.*"%>
 <%@ page import="javax.servlet.http.*,javax.servlet.*" %>
-<!DOCTYPE html>
 <html lang="en-US">
   <head>
     <meta charset="UTF-8">
