@@ -14,7 +14,7 @@
     <description>文件上传地址</description> 
     <param-name>photo-upload</param-name> 
     <!-- 需修改路径  E:/我的软件/JAVA/web_photo/WebContent/Photography_Course/images/-->
-    <param-value>C:/Users/ALEXWELL/workspace/watermelonpixel_new/WebContent/Photography_Course/images/</param-value> 
+    <param-value>C:/Users/ALEXWELL/workspace/watermelonpixel_new/WebContent/images</param-value> 
 </context-param>
 
 </web-app>

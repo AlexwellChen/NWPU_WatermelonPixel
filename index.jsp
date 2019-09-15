@@ -13,6 +13,7 @@
 @import url("css/index.css");
 </style>
 </head>
+<!-- 导航栏部分 -->
 <nav class="navbar navbar-default" role="navigation" style="font-size:18px">
     <div class="container-fluid"> 
     <div class="navbar-header">
@@ -28,18 +29,19 @@
     <div class="collapse navbar-collapse" id="example-navbar-collapse">
         <ul class="nav navbar-nav">
 			
-            <li ><a href="picture/picture.jsp"> 图库 </a>
+            <li ><a href="#"> 图库 </a>
             </li>
 			
             <li class="dropdown"><a href="Photography_Course/index.jsp" class="dropdown-toggle" data-toggle="dropdown"> 教程 <strong class="caret"></strong> </a>
               <ul class="dropdown-menu">
-                    <li><a href="Photography_Course/about.jsp">前期教程</a></li>
+                    <li><a href="#">前期教程</a></li>
 					<li class="divider"></li>
-                    <li><a href="Photography_Course/blog.jsp">后期教程</a></li>
+                    <li><a href="#">后期教程</a></li>
                 </ul>
             </li>
 			
-            <li ><a href="activity/picture.jsp"> 活动 </a>
+            <li ><a href="#"> 活动 </a></li>
+            <li ><a> 👈此部分暂未开放，敬请期待哦 ^_^ </a></li>
         </ul>
     </div>
     </div>
@@ -71,9 +73,9 @@
     <a class="carousel-control left" href="#myCarousel" 
        data-slide="prev"></a>
     <a class="carousel-control right" href="#myCarousel" 
-       data-slide="next">&rsaquo;</a>
+       data-slide="next"></a>
 </div>
-		
+<!-- 主页活动 -->		
 <section>
   <div class="container">
     <div class="row">
@@ -124,37 +126,47 @@
 	<div class="container">
 		<div class="row">
         	<div class="col-lg-12 text-center">
+        	<!-- 图片展示部分（暂时还未加入连接）一下图片为硬编码，暂未写入数据库 -->
 				<h2>精选作品</h2>
 				<br>
             </div>
         </div>
         <div class="row">
         	<div class="col-md-6 text-center">
-            	<img src="images/contents/home/latest_work/img1.jpg" height="300" alt="">
+            	<img src="images/contents/home/latest_work/img1.jpg" class="img-responsive" alt="">
+            	<br>
                 
             </div>
         	<div class="col-md-6 text-center">
-            	<img src="images/contents/home/latest_work/img2.jpg" height="300" alt="">
+            	<img src="images/contents/home/latest_work/img2.jpg" class="img-responsive" alt="">
                 
             </div>
         </div>
 		<br>
         <div class="row">
-        	<div class="col-md-3 text-center col-sm-6 col-xs-6"><img src="images/contents/home/latest_work/img_small1.jpg" height="150" alt=""></div>
-        	<div class="col-md-3 text-center col-sm-6 col-xs-6"><img src="images/contents/home/latest_work/img_small2.jpg" height="150" alt=""></div>
-			    <div class="col-md-3 text-center col-sm-6 col-xs-6 hidden-xs hidden-sm"><img src="images/contents/home/latest_work/img_small3.jpg" height="150" alt=""></div>
-        	<div class="col-md-3 text-center col-sm-6 col-xs-6 hidden-xs hidden-sm"><img src="images/contents/home/latest_work/img_small4.jpg" height="150" alt=""></div>
+        	<div class="col-md-3 text-center col-sm-6 col-xs-6"><img src="images/contents/home/latest_work/img_small1.jpg" class="img-responsive" alt=""></div>
+        	<div class="col-md-3 text-center col-sm-6 col-xs-6"><img src="images/contents/home/latest_work/img_small2.jpg" class="img-responsive" alt=""></div>
+			    <div class="col-md-3 text-center col-sm-6 col-xs-6 hidden-xs hidden-sm"><img src="images/contents/home/latest_work/img_small3.jpg" class="img-responsive" alt=""></div>
+        	<div class="col-md-3 text-center col-sm-6 col-xs-6 hidden-xs hidden-sm"><img src="images/contents/home/latest_work/img_small4.jpg" class="img-responsive" alt=""></div>
       </div>
       <hr>
         <div class="row">
-          <div class="col-md-3 text-center col-sm-6 col-xs-6"><img src="images/contents/home/latest_work/img_small5.jpg" height="150" alt=""></div>
-          <div class="col-md-3 text-center col-sm-6 col-xs-6"><img src="images/contents/home/latest_work/img_small6.jpg" height="150" alt=""></div>
-          <div class="col-md-3 text-center col-sm-6 col-xs-6 hidden-xs hidden-sm"><img src="images/contents/home/latest_work/img_small7.jpg" height="150" alt=""></div>
-          <div class="col-md-3 text-center col-sm-6 col-xs-6 hidden-xs hidden-sm"><img src="images/contents/home/latest_work/img_small8.jpg" height="150" alt=""></div>
+          <div class="col-md-3 text-center col-sm-6 col-xs-6"><img src="images/contents/home/latest_work/img_small5.jpg" class="img-responsive" alt=""></div>
+          <div class="col-md-3 text-center col-sm-6 col-xs-6"><img src="images/contents/home/latest_work/img_small6.jpg" class="img-responsive" alt=""></div>
+          <div class="col-md-3 text-center col-sm-6 col-xs-6 hidden-xs hidden-sm"><img src="images/contents/home/latest_work/img_small7.jpg" class="img-responsive" alt=""></div>
+          <div class="col-md-3 text-center col-sm-6 col-xs-6 hidden-xs hidden-sm"><img src="images/contents/home/latest_work/img_small8.jpg" class="img-responsive" alt=""></div>
+        </div>
+      <hr>
+        <div class="row">
+          <div class="col-md-3 text-center col-sm-6 col-xs-6"><img src="images/contents/home/latest_work/img_small9.jpg" class="img-responsive" alt=""></div>
+          <div class="col-md-3 text-center col-sm-6 col-xs-6"><img src="images/contents/home/latest_work/img_small10.jpg" class="img-responsive" alt=""></div>
+          <div class="col-md-3 text-center col-sm-6 col-xs-6 hidden-xs hidden-sm"><img src="images/contents/home/latest_work/img_small11.jpg" class="img-responsive" alt=""></div>
+          <div class="col-md-3 text-center col-sm-6 col-xs-6 hidden-xs hidden-sm"><img src="images/contents/home/latest_work/img_small12.jpg" class="img-responsive" alt=""></div>
         </div>
 	</div>
 </section>
 <hr>
+<!-- 底部声明 -->
 <section>
   <div class="container">
     <div class="row">
@@ -170,10 +182,11 @@
     <div class="container">
    	  <div class="row">
 		<div class="col-lg-4 col-md-4">
+		<!-- 
             <h3 class="text-center">关于摄学</h3>
             <h5>
 摄影学会致力于为给广大摄影爱好者提供一个展示自我与学习交流的平台，同时提高图片传媒在学校的影响力，记录校内外重大活动、日常变化，成为西工大特色传媒的主力军，西安有影响力的摄影类学生组织是我们的目标。
- </h5>
+ </h5> -->
         </div>
 		<div class="col-lg-4 col-md-4">
 		  <h3 class="text-center">联系方式</h3>
@@ -186,6 +199,7 @@
 			  微信:NWPU-SYXH<br>
 			</address>
 		</div>
+<!-- 反馈部分在响应式页面上仍然有布局问题
 <div class="col-lg-4 col-md-4">
 	<h3 class="text-center">反馈意见</h3>
     <form>
@@ -195,16 +209,19 @@
 	<button type="submit" class="btn btn-default">提交</button>
 	</form>
 </div>
+ -->
  <footer class="text-center">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
         <p>Copyright © 2019 NWPU Photography Association. All rights reserved.</p>
 		  <img src="images/logo/WMPixel.png" height="40" style="margin-left: 10px"/>
-		  <p> </p>
-		  <p><a href="后台管理系统/admin/index/index.jsp">后台管理</a></p>
-		  <p> </p>
+		  <br>
+		  
+		  <div style="width:300px;margin:0 auto; padding:20px 0;">
 		  <p> 陕ICP备19016691号-1 </p>
+		  <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=61011602000298" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="images/contents/home/beian.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">陕公网安备 61011602000298号</p></a>
+		  </div>
       </div>
     </div>
   </div>
@@ -240,5 +257,17 @@
 </script>
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/bootstrap.js"></script>
+<!-- 控制轮播间隔 -->
+<script>
+$(function(){
+
+	$('myCarousel').carousel({
+
+	interval:5000
+
+	});
+
+	});
+</script>
 </body>
 </html>

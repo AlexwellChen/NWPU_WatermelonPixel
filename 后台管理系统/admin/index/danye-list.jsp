@@ -1,4 +1,7 @@
-<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+  <%@ page import="java.io.*,java.util.*,java.sql.*"%>
+<%@ page import="javax.servlet.http.*,javax.servlet.*" %>
 <!DOCTYPE html>
 <html>
 
@@ -17,13 +20,10 @@
 			<form class="layui-form" action="">
 				<div class="layui-form-item">
 					<div class="layui-inline tool-btn">
-						<button class="layui-btn layui-btn-small layui-btn-normal go-btn hidden-xs" data-url="danye-detail.html"><i class="layui-icon">&#xe654;</i></button>
-						<button class="layui-btn layui-btn-small layui-btn-warm listOrderBtn hidden-xs" data-url="/admin/category/listorderall.html"><i class="iconfont">&#xe656;</i></button>
+						<button class="layui-btn layui-btn-small layui-btn-normal go-btn hidden-xs" data-url="../../../activity_module/activity-add.jsp"><i class="layui-icon">&#xe654;</i></button>
+						
 					</div>
-					<div class="layui-inline">
-						<input type="text" name="title" placeholder="请输入标题" autocomplete="off" class="layui-input">
-					</div>
-					<button class="layui-btn layui-btn-normal" lay-submit="search">搜索</button>
+					
 				</div>
 			</form>
 			<div class="layui-form" id="table-list">
@@ -39,137 +39,61 @@
 					</colgroup>
 					<thead>
 						<tr>
-							<th><input type="checkbox" name="" lay-skin="primary" lay-filter="allChoose"></th>
-							<th class="hidden-xs">ID</th>
-							<th class="hidden-xs">排序</th>
 							<th>图片名称</th>
-							<th>发布时间</th>
-							<th>状态</th>
-							<th>操作</th>
 						</tr>
 					</thead>
-					<tbody>
-						<tr>
-							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
-							<td class="hidden-xs">1</td>
-							<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
-							<td>关于我们</td>
-							<td>2016-09-06 20:46:16</td>
-							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
-							<td>
-								<div class="layui-inline">
-									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
-							<td class="hidden-xs">1</td>
-							<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
-							<td>产品中心</td>
-							<td>2016-09-06 20:46:16</td>
-							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
-							<td>
-								<div class="layui-inline">
-									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
-							<td class="hidden-xs">1</td>
-							<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
-							<td>新闻中心</td>
-							<td>2016-09-06 20:46:16</td>
-							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
-							<td>
-								<div class="layui-inline">
-									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
-							<td class="hidden-xs">1</td>
-							<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
-							<td>业务范围</td>
-							<td>2016-09-06 20:46:16</td>
-							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
-							<td>
-								<div class="layui-inline">
-									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
-							<td class="hidden-xs">1</td>
-							<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
-							<td>联系我们</td>
-							<td>2016-09-06 20:46:16</td>
-							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
-							<td>
-								<div class="layui-inline">
-									<button class="layui-btn layui-btn-mini layui-btn-normal  go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
-							<td class="hidden-xs">1</td>
-							<td class="hidden-xs"><input type="text" name="title" autocomplete="off" class="layui-input" value="0" data-id="1"></td>
-							<td>在线留言</td>
-							<td>2016-09-06 20:46:16</td>
-							<td><button class="layui-btn layui-btn-mini layui-btn-normal table-list-status" data-status='1'>显示</button></td>
-							<td>
-								<div class="layui-inline">
-									<button class="layui-btn layui-btn-mini layui-btn-normal go-btn" data-id="1" data-url="danye-detail.html"><i class="layui-icon">&#xe642;</i></button>
-									<button class="layui-btn layui-btn-mini layui-btn-danger del-btn" data-id="1" data-url="del.html"><i class="layui-icon">&#xe640;</i></button>
-								</div>
-							</td>
-						</tr>
-					</tbody>
 				</table>
-				<div class="page-wrap">
-						<ul class="pagination">
-							<li class="disabled"><span>«</span></li>
-							<li class="active"><span>1</span></li>
-							<li>
-								<a href="#">2</a>
-							</li>
-							<li>
-								<a href="#">»</a>
-							</li>
-						</ul>
-					</div>
+				
+				<% 
+      	String  user="root";    
+          Connection  conn=null;
+          	String  password="cfz990221";       //密码为自己数据库的密码   
+             Class.forName("com.mysql.cj.jdbc.Driver").newInstance(); //加载JDBC驱动程序   
+
+             String  url="jdbc:mysql:"+ "//127.0.0.1:3306/watermelon?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT"; //bin_db为你的数据库的名称   
+             //String url="jdbc:mysql://localhost:3306/bin_db?useUnicode=true&characterEncoding=utf-8";
+             //String  url="jdbc:mysql:"+ "//127.0.0.1:3306/bin_db+?user="+user+"&password="+password;
+           conn= DriverManager.getConnection(url,user,password);
+          Statement statement;
+          try {
+              statement = conn.createStatement();
+              //需要执行的数据库操作语句
+              String sql = "select * from activity_detail;";
+              //执行数据库操作语句并返回结果
+              ResultSet rs = statement.executeQuery(sql);
+           
+
+              String name = null;
+              
+              while(rs.next())
+              {
+                  name = rs.getString("activityName");
+                 %>
+                  		<tbody>
+								<tr>
+									<td><%=name %></td>
+									<br>
+									<br>
+								</tr>	
+							</tbody>
+       
+                 <% 
+              }
+            
+              rs.close();
+          } catch (SQLException e) {
+              // TODO Auto-generated catch block
+              e.printStackTrace();
+          }
+     
+ %>
+				
+				
+				
 			</div>
 		</div>
 		<script src="../../static/admin/layui/layui.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../../static/admin/js/common.js" type="text/javascript" charset="utf-8"></script>
-		<script>
-			layui.use(['form', 'jquery', 'layer', 'dialog'], function() {
-				var $ = layui.jquery;
-
-				//修改状态
-				$('#table-list').on('click', '.table-list-status', function() {
-					var That = $(this);
-					var status = That.attr('data-status');
-					var id = That.parent().attr('data-id');
-					if(status == 1) {
-						That.removeClass('layui-btn-normal').addClass('layui-btn-warm').html('隐藏').attr('data-status', 2);
-					} else if(status == 2) {
-						That.removeClass('layui-btn-warm').addClass('layui-btn-normal').html('显示').attr('data-status', 1);
-
-					}
-				})
-
-			});
-		</script>
 	</body>
 
 </html>

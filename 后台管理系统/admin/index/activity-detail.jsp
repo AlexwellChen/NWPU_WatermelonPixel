@@ -61,10 +61,7 @@ border:0.1px solid #CCCCCC;
 		<div class="page-content-wrap">
 				<form  method="post" action="../../../Photography_Course/uptodb.jsp" enctype="multipart/form-data">
 					<div class="layui-tab" style="margin: 0;">
-						<ul class="layui-tab-title">
-						  <li><a href="activity-list.jsp">活动列表</a></li>
-						  <li class="layui-this">活动详情</li>
-						</ul>
+						
 						<div class="layui-tab-content">
 						  <div class="layui-tab-item"></div>
 							<div class="layui-tab-item layui-show">
@@ -72,7 +69,7 @@ border:0.1px solid #CCCCCC;
 								<div class="layui-form-item">
 								  <label class="layui-form-label">教程名称：</label>
 								  <div class="layui-input-block">
-										<input type="text" name="name" required lay-verify="required" placeholder="请输入活动名称" autocomplete="off" class="layui-input">
+										<input type="text" name="name" required lay-verify="required" placeholder="请输入教程名称" autocomplete="off" class="layui-input">
 									</div>
 								</div>
 								<div class="layui-form-item">
@@ -128,7 +125,6 @@ border:0.1px solid #CCCCCC;
 										<input type="text" name="writer" required lay-verify="required" placeholder="请输入创建人" autocomplete="off" class="layui-input">
 									</div>
 								</div>
-
 							</div>
 						</div>
 					</div>

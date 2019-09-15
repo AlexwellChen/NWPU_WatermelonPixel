@@ -1,4 +1,7 @@
-<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+  <%@ page import="java.io.*,java.util.*,java.sql.*"%>
+<%@ page import="javax.servlet.http.*,javax.servlet.*" %>
 <html class="iframe-h">
 
 	<head>
@@ -36,35 +39,62 @@
 								<col width="150">
 							</colgroup>
 							<thead>
-								<tr>
-									<th><input type="checkbox" name="" lay-skin="primary" lay-filter="allChoose"></th>
-									<th class="hidden-xs">ID</th>
-									
+								<tr>		
 									<th>名称</th>
-									<th class="hidden-xs">创建时间</th>
-									<th class="hidden-xs">修改时间</th>
-									<th>状态</th>
 									<th>操作</th>
 								</tr>
 							</thead>
-							<tbody>
+							
+		<% 
+      	String  user="root";    
+          Connection  conn=null;
+          	String  password="cfz990221";       //密码为自己数据库的密码   
+             Class.forName("com.mysql.cj.jdbc.Driver").newInstance(); //加载JDBC驱动程序   
+
+             String  url="jdbc:mysql:"+ "//127.0.0.1:3306/test?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT"; //bin_db为你的数据库的名称   
+             //String url="jdbc:mysql://localhost:3306/bin_db?useUnicode=true&characterEncoding=utf-8";
+             //String  url="jdbc:mysql:"+ "//127.0.0.1:3306/bin_db+?user="+user+"&password="+password;
+           conn= DriverManager.getConnection(url,user,password);
+          Statement statement;
+          try {
+              statement = conn.createStatement();
+              //需要执行的数据库操作语句
+              String sql = "select * from huodong_detail;";
+              //执行数据库操作语句并返回结果
+              ResultSet rs = statement.executeQuery(sql);
+           
+
+              String name = null;
+              
+              while(rs.next())
+              {
+                  name = rs.getString("pagename");
+                 %>
+                  		<tbody>
 								<tr>
-									<td><input type="checkbox" name="" lay-skin="primary" data-id="1"></td>
-									<td class="hidden-xs">1</td>
-									
-									<td>报名</td>
-									<td class="hidden-xs">1989-10-14</td>
-									<td class="hidden-xs">1989-10-14</td>
-									<td><button class="layui-btn layui-btn-mini layui-btn-normal">正常</button></td>
+									<td><%=name %></td>
 									<td>
 										<div class="layui-inline">
-											<button class="layui-btn layui-btn-small layui-btn-normal go-btn" data-id="1" data-url="activity-detail.jsp"><i class="layui-icon">&#xe642;</i></button>
-											<button class="layui-btn layui-btn-small layui-btn-danger del-btn" data-id="1" data-url="activity-detail.jsp"><i class="layui-icon">&#xe640;</i></button>
+											<button class="layui-btn layui-btn-small layui-btn-normal go-btn" data-id="1" data-url="huodong-add.jsp"><i class="layui-icon">&#xe642;</i></button>
+										
 										</div>
 									</td>
-								</tr>
-								
+								</tr>	
 							</tbody>
+       
+                 <% 
+              }
+            
+              rs.close();
+          } catch (SQLException e) {
+              // TODO Auto-generated catch block
+              e.printStackTrace();
+          }
+     
+ %>
+							
+							
+							
 						</table>
 						
 					</div>

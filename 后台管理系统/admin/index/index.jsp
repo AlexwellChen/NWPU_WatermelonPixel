@@ -19,6 +19,7 @@
 				  
 				  <li class="layui-nav-item">
 				    <a href="javascript:;"><i class="iconfont">&#xe608;</i>内容管理</a>
+				    <!-- 连接到不同的管理页面 -->
 				    <dl class="layui-nav-child">
 				      <dd><a href="javascript:;" data-url="activity-list.jsp" data-id="3" data-text="教程管理"><span class="l-line"></span>教程管理</a></dd>
 				      <dd><a href="javascript:;" data-url="danye-list.jsp" data-id="6" data-text="图片管理"><span class="l-line"></span>图片管理</a></dd>

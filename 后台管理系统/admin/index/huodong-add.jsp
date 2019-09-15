@@ -59,7 +59,7 @@ border:0.1px solid #CCCCCC;
 
 	<body>
 		<div class="page-content-wrap">
-				<form  method="post" action="../../../activity/uptodb.jsp" enctype="multipart/form-data">
+				<form  method="post" action="../../../后台管理系统/admin/index/uptodb.jsp" enctype="multipart/form-data">
 					<div class="layui-tab" style="margin: 0;">
 						<ul class="layui-tab-title">
 						  <li><a href="activity-list.jsp">活动列表</a></li>
@@ -75,14 +75,13 @@ border:0.1px solid #CCCCCC;
 										<input type="text" name="name" required lay-verify="required" placeholder="请输入活动名称" autocomplete="off" class="layui-input">
 									</div>
 								</div>
+								
 								<div class="layui-form-item">
-									<label class="layui-form-label">教程分类：</label>
+									<label class="layui-form-label">活动分类：</label>
 									<div class="layui-input-block">
 										<select name="category" >
-											
 												<option value="lecture">培训讲座</option>
 												<option value="outside">外拍活动</option>
-											
 										</select>
 									</div>
 								</div>
@@ -97,9 +96,6 @@ border:0.1px solid #CCCCCC;
 												<img id="imghead"src="/style/images/blank.gif" class="img_po"/> <!--图片显示位置-->
 											</div>
 											</label>
-											
-											
-        
    									 </div>
 								</div>
 								
@@ -107,35 +103,44 @@ border:0.1px solid #CCCCCC;
 								<div class="layui-form-item layui-form-text">
 								  <label class="layui-form-label">活动内容：</label>
 								  <div class="layui-input-block">
-										<textarea class="layui-textarea layui-hide" name="content" lay-verify="content" id="LAY_demo_editor"></textarea>
+										<textarea class="layui-textarea" name="content" lay-verify="content" id="LAY_demo_editor"></textarea>
 									</div>
 								</div>
+								
 								<div class="layui-form-item">
 									<label class="layui-form-label">关键字：</label>
 									<div class="layui-input-block">
 										<input type="text" name="key" placeholder="请输入关键字" autocomplete="off" class="layui-input">
 									</div>
 								</div>
+								
 								<div class="layui-form-item layui-form-text">
 									<label class="layui-form-label">描述：</label>
 									<div class="layui-input-block">
 										<textarea placeholder="请输入内容"  name="description" class="layui-textarea"></textarea>
 									</div>
 								</div>
+								
 								<div class="layui-form-item">
 								  <label class="layui-form-label">作者：</label>
 								  <div class="layui-input-block">
 										<input type="text" name="writer" required lay-verify="required" placeholder="请输入创建人" autocomplete="off" class="layui-input">
 									</div>
 								</div>
-
+								
+								<div class="layui-form-item">
+									<label class="layui-form-label">数据库名称：</label>
+									  <div class="layui-input-block">
+											<input type="text" name="databasename" required lay-verify="required" placeholder="请勿使用中文" autocomplete="off" class="layui-input">
+									  </div>
+								</div>
+								
 							</div>
 						</div>
 					</div>
 					<div class="layui-form-item" style="padding-left: 10px;">
 						<div class="layui-input-block">
 							<button class="layui-btn layui-btn-normal" type="submit" name="Submit" lay-filter="formDemo">立即提交</button>
-							<button type="reset" class="layui-btn layui-btn-primary">重置</button>
 						</div>
 					</div>
 				</form>
